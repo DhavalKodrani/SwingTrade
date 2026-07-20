@@ -1,0 +1,85 @@
+# =============================================================================
+# High-Probability Swing Trade Scanner - configuration
+# =============================================================================
+# Every tunable lives here so the code stays declarative. Edit values, not code.
+# Sister projects: Stock_squeeze_screener (daily+intraday squeeze),
+#                  supertrend-dashboard (weekly Supertrend+10EMA).
+# This is the THIRD system: intraday-triggered, long-only swing setups run
+# exactly 4x/day inside a 12-hour window, across the SAME US-listed universe.
+
+# ------------------------------------------------------------------ scheduling
+schedule:
+  # Timezone the 09:00-21:00 window and run times are expressed in.
+  # America/New_York lines the window up with US market sessions:
+  #   09:00-09:30 late pre-market | 09:30-16:00 RTH | 16:00-20:00 after-hours.
+  timezone: "America/New_York"
+  window_start: "09:00"          # scanner refuses to run before this (local tz)
+  window_end:   "21:00"          # ...or after this. 12-hour active window.
+  # Exactly 4 strategic runs mapped to market inflection points.
+  # (Even-spacing alternative: 09:00, 13:00, 17:00, 21:00.)
+  run_times:
+    - "09:15"                    # late pre-market  -> state PRE
+    - "11:00"                    # post-open settle -> state LIVE
+    - "15:30"                    # power hour       -> state LIVE
+    - "19:00"                    # after-hours      -> state POST
+
+# ------------------------------------------------------------------- risk model
+risk:
+  position_size: 500             # base allocation per simulated trade (currency units)
+  tp_pct: 0.05                   # take-profit: +5% from entry trigger (minimum gain)
+  sl_pct: 0.02                   # stop-loss:   -2% from entry trigger (maximum loss)
+  rr_target: 2.5                 # reward:risk = tp_pct / sl_pct = 5/2 = 2.5  (1 : 2.5)
+  # Aspirational win-rate band the score threshold is tuned toward. The number
+  # actually REPORTED per ticker is the empirical backtest rate (see below).
+  prob_target_low: 0.75
+  prob_target_high: 0.80
+
+# ----------------------------------------------------------------- universe
+universe:
+  min_price: 1.00                # drop sub-$1 (spread/noise); avoids junk fills
+  max_price: null                # null = no cap
+  min_avg_dollar_vol: 1000000    # liquidity floor: 20-day avg (close*volume)
+  fallback_file: "tickers.txt"   # used only if the live NASDAQ Trader fetch fails
+  max_tickers: 8000              # safety cap
+
+# ----------------------------------------------------------------- data layer
+data:
+  daily_lookback: "1y"           # daily bars for live indicators
+  backtest_lookback: "2y"        # deeper history for the empirical win-rate
+  intraday_interval: "15m"       # extended-hours capable interval
+  intraday_lookback: "5d"        # yfinance intraday retention for 15m
+  prepost: true                  # include pre/post-market bars (extended hours)
+  batch_size: 200                # yfinance rate-limit-friendly batching
+  batch_pause: 2.0               # seconds between batches
+  max_retries: 3
+  retry_backoff: 5.0             # base seconds, multiplied by attempt number
+
+# ------------------------------------------------------------- signal thresholds
+signals:
+  ema_fast: 20
+  ema_slow: 50
+  rsi_period: 14
+  rsi_min: 50.0                  # momentum floor
+  rsi_max: 72.0                  # overbought ceiling (protects the +5% target)
+  macd_fast: 12
+  macd_slow: 26
+  macd_signal: 9
+  vol_period: 20
+  vol_breakout: 1.5              # last volume must exceed 1.5x the 20-day average
+  breakout_lookback: 20          # bars for the prior-high breakout test
+  breakout_tolerance: 0.02       # within 2% of the prior N-day high counts
+  atr_period: 14
+  score_threshold: 55.0          # 0-100 composite; below this is not a candidate
+
+# ------------------------------------------------------------------- backtest
+backtest:
+  hold_days: 15                  # trading days to reach TP before SL
+  min_samples: 12                # fewer historical setups -> report "n/a"
+  intrabar_conflict: "sl_first"  # if a bar hits both TP and SL: assume the loss
+
+# --------------------------------------------------------------------- output
+output:
+  report_html: "swing_report.html"
+  results_json: "docs/data/results.json"
+  max_rows: 60                   # dashboard row cap (ranked by score)
+  dashboard_url: "https://dhavalkodrani.github.io/SwingTrade/"

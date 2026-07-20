@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# generated outputs (regenerated each run)
+swing_report.html
+site/
+
+# local secrets / scratch
+.env
+*.log

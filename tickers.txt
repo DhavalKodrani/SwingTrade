@@ -1,0 +1,33 @@
+# FALLBACK ticker list - used ONLY if the live NASDAQ Trader universe fetch
+# fails (e.g. a CI network hiccup). Normally the scanner pulls ALL US-listed
+# stocks automatically, the same source as Stock_squeeze_screener and
+# supertrend-dashboard. One symbol per line, '#' for comments.
+
+# From Stock_squeeze_screener fallback
+SIRI
+NOK
+SNAP
+PLUG
+FCEL
+RIOT
+MARA
+NIO
+SOFI
+CLOV
+
+# Personal watchlist (mirrors supertrend-dashboard)
+DVLT
+RR
+PSTV
+RZLV
+APLD
+
+# Liquid large caps - useful smoke-test names for the swing gate
+AAPL
+MSFT
+NVDA
+AMD
+TSLA
+AMZN
+META
+GOOGL

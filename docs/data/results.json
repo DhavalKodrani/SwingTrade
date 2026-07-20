@@ -1,0 +1,13 @@
+{
+  "generated": "2026-07-20T22:20:13",
+  "market_state": "POST",
+  "scanned": 12,
+  "candidates": 0,
+  "risk": {
+    "position_size": 500,
+    "tp_pct": 0.05,
+    "sl_pct": 0.02,
+    "rr_ratio": 2.5
+  },
+  "results": []
+}

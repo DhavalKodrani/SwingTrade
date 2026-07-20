@@ -1,0 +1,136 @@
+name: Swing Scan (4x daily)
+
+# Runs the High-Probability Swing Trade Scanner exactly 4 times per day inside
+# the 09:00-21:00 US/Eastern window, at the strategic inflection points defined
+# in config.yaml (run_times: 09:15, 11:00, 15:30, 19:00 ET).
+#
+# NOTE on cron + DST: GitHub cron is always UTC and never adjusts for daylight
+# saving. The four UTC times below line up with EDT (summer, UTC-4). In EST
+# (winter) they land one hour earlier in ET; that is fine because run_scan.py
+# re-checks the active window and market state at runtime. GitHub cron is also
+# best-effort and can fire a few minutes late on a busy queue.
+
+on:
+  schedule:
+    - cron: "15 13 * * 1-5"   # 09:15 ET (EDT) -> PRE
+    - cron: "0 15 * * 1-5"    # 11:00 ET (EDT) -> LIVE
+    - cron: "30 19 * * 1-5"   # 15:30 ET (EDT) -> LIVE (power hour)
+    - cron: "0 23 * * 1-5"    # 19:00 ET (EDT) -> POST
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Optional comma-separated tickers for an on-demand scan (leave empty = full universe)."
+        required: false
+        default: ""
+      limit:
+        description: "Optional cap on universe size (debug)."
+        required: false
+        default: ""
+
+permissions:
+  contents: write     # commit docs/data/results.json back to the repo
+  pages: write        # publish the dashboard
+  id-token: write
+  issues: write       # phone-notification alert issues on candidates
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "swing-bot"
+          git config user.email "actions@github.com"
+
+      - name: Run swing scan
+        env:
+          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          CUSTOM_TICKERS: ${{ github.event.inputs.tickers }}
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: |
+          ARGS="--force"
+          [ -n "$CUSTOM_TICKERS" ] && ARGS="$ARGS --tickers $CUSTOM_TICKERS"
+          [ -n "$LIMIT" ] && ARGS="$ARGS --limit $LIMIT"
+          python run_scan.py $ARGS
+
+      - name: Prepare Pages site
+        run: |
+          mkdir -p site
+          cp swing_report.html site/index.html
+          mkdir -p site/data && cp -r docs/data/* site/data/ 2>/dev/null || true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Open alert issue on candidates (phone notification)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          [ -f docs/data/results.json ] || { echo "No results.json - nothing to notify."; exit 0; }
+          python - << 'EOF'
+          import json
+          d = json.load(open("docs/data/results.json", encoding="utf-8"))
+          rs = d.get("results", [])[:15]
+          if not rs:
+              open("alert_tickers.txt", "w").close()
+              raise SystemExit(0)
+          def win(r):
+              return f"{r['emp_win_rate']*100:.0f}% ({r['emp_samples']})" if r.get("emp_win_rate") is not None else "n/a"
+          rows = [f"| **{r['ticker']}** | {r['market_state']} | {r['entry']:.2f} | "
+                  f"{r['tp_price']:.2f} | {r['sl_price']:.2f} | {r['score']:.0f} | {win(r)} |"
+                  for r in rs]
+          body = ("The swing scan flagged **%d candidate(s)** (market %s):\n\n" % (d["candidates"], d["market_state"]) +
+                  "| Ticker | State | Entry | TP +5% | SL -2% | Score | Win% (n) |\n"
+                  "|---|---|---|---|---|---|---|\n" + "\n".join(rows) +
+                  "\n\n[Open the dashboard](https://dhavalkodrani.github.io/SwingTrade/)\n\n"
+                  "*Score ranks signal strength; Win% is the empirical TP-before-SL rate over n past setups. "
+                  "Technical screen - not financial advice.*")
+          open("issue_body.md", "w", encoding="utf-8").write(body)
+          open("alert_tickers.txt", "w").write(",".join(r["ticker"] for r in rs))
+          EOF
+          TICKERS=$(cat alert_tickers.txt 2>/dev/null)
+          [ -z "$TICKERS" ] && { echo "No candidates - no alert."; exit 0; }
+          TITLE="📈 Swing candidates $(date -u +'%Y-%m-%d %H:%M'): $TICKERS"
+          gh issue create --title "$TITLE" --body-file issue_body.md --assignee "$OWNER"
+
+      - name: Commit dashboard data back to repo
+        run: |
+          rm -f alert_tickers.txt issue_body.md
+          git add docs/data/results.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Update swing results [skip ci]"
+          git pull --rebase || true
+          git push || echo "Nothing to push"
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: swing-report-${{ github.run_number }}
+          path: swing_report.html
+          retention-days: 30
+
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
