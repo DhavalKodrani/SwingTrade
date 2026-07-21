@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T22:15:42",
+  "generated": "2026-07-21T00:24:23",
   "market_state": "POST",
   "scanned": 6931,
   "candidates": 7,
@@ -33,7 +33,7 @@
       "ema_slow": 6.69,
       "vol_ratio": 3.69,
       "atr_pct": 9.7,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     },
     {
       "ticker": "BWAY",
@@ -58,7 +58,7 @@
       "ema_slow": 14.93,
       "vol_ratio": 3.34,
       "atr_pct": 4.68,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     },
     {
       "ticker": "HOG",
@@ -83,7 +83,7 @@
       "ema_slow": 24.76,
       "vol_ratio": 1.77,
       "atr_pct": 3.5,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     },
     {
       "ticker": "SOPH",
@@ -108,7 +108,7 @@
       "ema_slow": 5.38,
       "vol_ratio": 1.79,
       "atr_pct": 5.84,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     },
     {
       "ticker": "VG",
@@ -133,7 +133,7 @@
       "ema_slow": 12.36,
       "vol_ratio": 1.53,
       "atr_pct": 5.15,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     },
     {
       "ticker": "WERN",
@@ -158,7 +158,7 @@
       "ema_slow": 41.39,
       "vol_ratio": 1.62,
       "atr_pct": 3.28,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     },
     {
       "ticker": "NFBK",
@@ -183,7 +183,7 @@
       "ema_slow": 14.44,
       "vol_ratio": 2.58,
       "atr_pct": 1.97,
-      "asof": "2026-07-20 17:41 EDT"
+      "asof": "2026-07-20 19:51 EDT"
     }
   ]
 }
