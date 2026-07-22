@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T21:20:53",
+  "generated": "2026-07-22T00:35:38",
   "market_state": "POST",
   "scanned": 6927,
   "candidates": 10,
@@ -33,7 +33,7 @@
       "ema_slow": 6.8,
       "vol_ratio": 3.5,
       "atr_pct": 9.27,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "TPC",
@@ -58,7 +58,7 @@
       "ema_slow": 78.42,
       "vol_ratio": 3.09,
       "atr_pct": 4.39,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "BULL",
@@ -73,17 +73,17 @@
       "shares": 61.3497,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 67.5,
-      "prob_band": "Medium",
+      "score": 68.0,
+      "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 8,
       "rsi": 67.1,
       "macd_hist": 0.0601,
       "ema_fast": 7.28,
       "ema_slow": 6.92,
-      "vol_ratio": 1.58,
+      "vol_ratio": 1.62,
       "atr_pct": 5.38,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "BANC",
@@ -108,7 +108,7 @@
       "ema_slow": 19.97,
       "vol_ratio": 2.62,
       "atr_pct": 2.25,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "HOG",
@@ -133,7 +133,7 @@
       "ema_slow": 24.9,
       "vol_ratio": 1.54,
       "atr_pct": 3.48,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "SLGL",
@@ -158,7 +158,7 @@
       "ema_slow": 75.24,
       "vol_ratio": 1.61,
       "atr_pct": 6.23,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "WASH",
@@ -183,7 +183,32 @@
       "ema_slow": 34.66,
       "vol_ratio": 2.44,
       "atr_pct": 2.7,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
+    },
+    {
+      "ticker": "CCK",
+      "market_state": "POST",
+      "entry": 117.99,
+      "tp_price": 123.8895,
+      "sl_price": 115.6302,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 4.2376,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 59.2,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 8,
+      "rsi": 69.2,
+      "macd_hist": 0.2789,
+      "ema_fast": 111.08,
+      "ema_slow": 106.48,
+      "vol_ratio": 2.58,
+      "atr_pct": 2.76,
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "MMM",
@@ -208,7 +233,7 @@
       "ema_slow": 157.09,
       "vol_ratio": 3.05,
       "atr_pct": 2.87,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     },
     {
       "ticker": "FF",
@@ -233,32 +258,7 @@
       "ema_slow": 4.45,
       "vol_ratio": 1.7,
       "atr_pct": 4.35,
-      "asof": "2026-07-21 16:40 EDT"
-    },
-    {
-      "ticker": "CCK",
-      "market_state": "POST",
-      "entry": 117.99,
-      "tp_price": 123.8895,
-      "sl_price": 115.6302,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 4.2376,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 55.2,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 8,
-      "rsi": 69.2,
-      "macd_hist": 0.2789,
-      "ema_fast": 111.08,
-      "ema_slow": 106.48,
-      "vol_ratio": 2.29,
-      "atr_pct": 2.76,
-      "asof": "2026-07-21 16:40 EDT"
+      "asof": "2026-07-21 19:51 EDT"
     }
   ]
 }
