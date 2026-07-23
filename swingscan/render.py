@@ -137,6 +137,28 @@ function applyView() {
   var c = document.getElementById('rowCount');
   if (c) c.textContent = shown + ' of ' + rows.length + ' rows';
 }
+var histState = { field: null, asc: true };
+function sortHist(field, type) {
+  var tb = document.getElementById('histrows');
+  if (!tb) return;
+  var rows = Array.prototype.slice.call(tb.querySelectorAll('tr'));
+  if (histState.field === field) { histState.asc = !histState.asc; }
+  else { histState.field = field; histState.asc = true; }
+  var asc = histState.asc;
+  rows.sort(function (a, b) {
+    var va = a.dataset[field], vb = b.dataset[field];
+    if (type === 'num') {
+      va = parseFloat(va); vb = parseFloat(vb);
+      if (isNaN(va)) va = asc ? Infinity : -Infinity;
+      if (isNaN(vb)) vb = asc ? Infinity : -Infinity;
+      return asc ? va - vb : vb - va;
+    }
+    va = va || ''; vb = vb || '';
+    var cmp = va.localeCompare(vb);
+    return asc ? cmp : -cmp;
+  });
+  rows.forEach(function (r) { tb.appendChild(r); });
+}
 </script>"""
 
 
@@ -170,9 +192,9 @@ def _current_controls() -> str:
     </div>"""
 
 
-def _current_table(results: list[TradeSetup], cfg) -> str:
+def _current_table(results: list[TradeSetup], first_seen: dict, cfg) -> str:
     if not results:
-        return ('<div class="wrap"><table><tbody><tr><td colspan="11" '
+        return ('<div class="wrap"><table><tbody><tr><td colspan="12" '
                 'style="text-align:center;color:#64748b;padding:16px;">'
                 'No qualifying setups this run.</td></tr></tbody></table></div>')
     rows = []
@@ -180,12 +202,16 @@ def _current_table(results: list[TradeSetup], cfg) -> str:
         col = STATE_COLORS.get(r.market_state, "#6b7280")
         win = f"{r.emp_win_rate*100:.0f}%" if r.emp_win_rate is not None else "n/a"
         win_sort = r.emp_win_rate if r.emp_win_rate is not None else ""
+        # When this signal FIRST triggered (from history); falls back to this scan.
+        trig_at, trig_iso = first_seen.get(r.ticker, (r.asof, r.asof))
         rows.append(f"""
           <tr data-ticker="{r.ticker}" data-state="{r.market_state}" data-score="{r.score}"
-              data-win="{win_sort}" data-entry="{r.entry}" data-vol="{r.vol_ratio}" data-rsi="{r.rsi}">
+              data-win="{win_sort}" data-entry="{r.entry}" data-vol="{r.vol_ratio}" data-rsi="{r.rsi}"
+              data-trig="{trig_iso}">
             <td>{_tv(r.ticker)}</td>
             <td><span style="background:{col};color:#fff;border-radius:6px;padding:2px 10px;
                 font-size:12px;">{r.market_state}</span></td>
+            <td style="color:#475569;white-space:nowrap;">{trig_at}</td>
             <td>{r.entry:.2f}</td>
             <td style="color:#16a34a;">{r.tp_price:.2f}</td>
             <td style="color:#dc2626;">{r.sl_price:.2f}</td>
@@ -198,14 +224,17 @@ def _current_table(results: list[TradeSetup], cfg) -> str:
           </tr>""")
     return f"""
       <div class="wrap">
-      <table style="min-width:960px;">
+      <table style="min-width:1020px;">
         <thead><tr>
-          <th>Ticker</th><th>State</th><th>Entry</th><th>TP +5%</th><th>SL -2%</th>
+          <th>Ticker</th><th>State</th><th>Triggered</th><th>Entry</th><th>TP +5%</th><th>SL -2%</th>
           <th>Shares</th><th>Rwd/Risk</th><th>Score</th><th>Win% (n)</th><th>Band</th><th>RSI / Vol</th>
         </tr></thead>
         <tbody id="rows">{''.join(rows)}</tbody>
       </table>
       </div>"""
+
+
+_STATUS_RANK = {"OPEN": 0, "TP_HIT": 1, "SL_HIT": 2}
 
 
 def _history_table(history: list[dict]) -> str:
@@ -218,16 +247,21 @@ def _history_table(history: list[dict]) -> str:
         up = h.get("direction") == "UP"
         arrow, acol = ("▲", "#16a34a") if up else ("▼", "#dc2626")
         chg = h.get("change_pct", 0.0)
-        label, scol = STATUS_META.get(h.get("status", "OPEN"), ("Open", "#6b7280"))
+        status = h.get("status", "OPEN")
+        label, scol = STATUS_META.get(status, ("Open", "#6b7280"))
         state_col = STATE_COLORS.get(h.get("first_state", "CLOSED"), "#6b7280")
+        cur = h.get("current_price", h["first_price"])
         rows.append(f"""
-          <tr>
+          <tr data-ticker="{h['ticker']}" data-firstts="{h.get('first_iso','')}"
+              data-first="{h['first_price']}" data-current="{cur}" data-change="{chg}"
+              data-statusrank="{_STATUS_RANK.get(status, 0)}" data-tp="{h.get('tp_price',0)}"
+              data-sl="{h.get('sl_price',0)}" data-lastts="{h.get('last_iso','')}">
             <td>{_tv(h['ticker'])}</td>
             <td>{h['first_price']:.2f}
                 <span style="color:#94a3b8;font-size:12px;">{h.get('first_at','')}</span>
                 <span style="background:{state_col};color:#fff;border-radius:5px;padding:1px 6px;
                     font-size:11px;margin-left:4px;">{h.get('first_state','')}</span></td>
-            <td style="font-weight:600;">{h.get('current_price', h['first_price']):.2f}</td>
+            <td style="font-weight:600;">{cur:.2f}</td>
             <td style="color:{acol};font-weight:600;white-space:nowrap;">{arrow}&nbsp;{chg:+.2f}%</td>
             <td><span style="background:{scol};color:#fff;border-radius:6px;padding:2px 10px;
                 font-size:12px;">{label}</span></td>
@@ -235,14 +269,21 @@ def _history_table(history: list[dict]) -> str:
             <td style="color:#dc2626;">{h.get('sl_price',0):.2f}</td>
             <td style="color:#64748b;">{h.get('last_at','')}</td>
           </tr>""")
+    def th(label, field, typ):
+        return (f'<th onclick="sortHist(\'{field}\',\'{typ}\')" style="cursor:pointer;'
+                f'user-select:none;white-space:nowrap;" title="Sort by {label}">'
+                f'{label} <span style="color:#94a3b8;font-size:11px;">⇅</span></th>')
+    header = "".join([
+        th("Ticker", "ticker", "txt"), th("Triggered @ (first)", "firstts", "txt"),
+        th("Current", "current", "num"), th("Change", "change", "num"),
+        th("Status", "statusrank", "num"), th("TP +5%", "tp", "num"),
+        th("SL -2%", "sl", "num"), th("Last seen", "lastts", "txt"),
+    ])
     return f"""
       <div class="wrap">
       <table style="min-width:880px;">
-        <thead><tr>
-          <th>Ticker</th><th>Triggered @ (first)</th><th>Current</th><th>Change</th>
-          <th>Status</th><th>TP +5%</th><th>SL -2%</th><th>Last seen</th>
-        </tr></thead>
-        <tbody>{''.join(rows)}</tbody>
+        <thead><tr>{header}</tr></thead>
+        <tbody id="histrows">{''.join(rows)}</tbody>
       </table>
       </div>"""
 
@@ -253,6 +294,8 @@ def build_html(results: list[TradeSetup], history: list[dict], scanned: int, sta
     pos = cfg.risk.position_size
     n_hist = len(history)
     open_hist = sum(1 for h in history if h.get("status") == "OPEN")
+    # When each ticker FIRST triggered, for the Current tab's Triggered column.
+    first_seen = {h["ticker"]: (h.get("first_at", ""), h.get("first_iso", "")) for h in history}
 
     return f"""<!DOCTYPE html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -276,7 +319,7 @@ def build_html(results: list[TradeSetup], history: list[dict], scanned: int, sta
 
     <div id="panel-current">
       {_current_controls()}
-      {_current_table(results, cfg)}
+      {_current_table(results, first_seen, cfg)}
     </div>
 
     <div id="panel-history" style="display:none;">
