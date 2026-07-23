@@ -32,6 +32,32 @@ def _download(tickers, **kwargs):
     )
 
 
+def _last_close(df) -> float | None:
+    """Robustly pull the last non-null Close from a single-ticker download,
+    tolerant of single-level OR MultiIndex columns and throttled/odd payloads."""
+    if df is None or getattr(df, "empty", True):
+        return None
+    try:
+        cols = df.columns
+        if isinstance(cols, pd.MultiIndex):
+            if "Close" in cols.get_level_values(-1):
+                s = df.xs("Close", axis=1, level=-1)
+            elif "Close" in cols.get_level_values(0):
+                s = df.xs("Close", axis=1, level=0)
+            else:
+                return None
+            if getattr(s, "ndim", 1) > 1:
+                s = s.iloc[:, 0]
+        else:
+            if "Close" not in cols:
+                return None
+            s = df["Close"]
+        s = s.dropna()
+        return float(s.iloc[-1]) if not s.empty else None
+    except Exception:  # noqa: BLE001 - never let a shape surprise crash a scan
+        return None
+
+
 def fetch_daily_batch(
     batch: list[str],
     period: str,
@@ -74,24 +100,30 @@ def fetch_live_price(
     backoff: float = 5.0,
 ) -> float | None:
     """
-    Last available traded price INCLUDING pre/post-market bars. Returns None if
-    extended-hours data is empty so the caller can fall back to the daily close.
+    Last available traded price INCLUDING pre/post-market bars. During thin
+    extended-hours sessions the intraday payload can be empty, so we fall back to
+    the most recent DAILY close (a real, recent price) rather than returning None.
+    Returns None only if both intraday and daily are unavailable.
     """
+    # 1) intraday incl. pre/post
     for attempt in range(1, max_retries + 1):
         try:
             df = _download(ticker, period=period, interval=interval, prepost=prepost)
-            if df is None or df.empty:
-                return None
-            close = df["Close"].dropna()
-            if close.empty:
-                return None
-            return float(close.iloc[-1])
+            price = _last_close(df)
+            if price is not None:
+                return price
+            break  # empty/odd payload (not an error) -> use daily fallback
         except Exception as exc:  # noqa: BLE001
             wait = backoff * attempt
             print(f"  live price {ticker} attempt {attempt}/{max_retries} failed: "
                   f"{exc} (retry in {wait:.0f}s)")
             time.sleep(wait)
-    return None
+
+    # 2) daily-close fallback for thin/empty extended-hours sessions
+    try:
+        return _last_close(_download(ticker, period="5d", interval="1d"))
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def batched(seq: list[str], size: int):
