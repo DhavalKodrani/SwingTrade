@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-23T00:31:14",
-  "market_state": "POST",
-  "scanned": 6923,
-  "candidates": 9,
+  "generated": "2026-07-23T08:45:19",
+  "market_state": "PRE",
+  "scanned": 6916,
+  "candidates": 10,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "EDRY",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 24.74,
       "tp_price": 25.977,
       "sl_price": 24.2452,
@@ -32,12 +32,12 @@
       "ema_fast": 22.79,
       "ema_slow": 22.25,
       "vol_ratio": 3.13,
-      "atr_pct": 6.35,
-      "asof": "2026-07-22 19:56 EDT"
+      "atr_pct": 6.37,
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "BLFS",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 31.15,
       "tp_price": 32.7075,
       "sl_price": 30.527,
@@ -56,13 +56,13 @@
       "macd_hist": 0.1072,
       "ema_fast": 28.45,
       "ema_slow": 26.58,
-      "vol_ratio": 6.34,
+      "vol_ratio": 6.35,
       "atr_pct": 4.2,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "PLSE",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 32.76,
       "tp_price": 34.398,
       "sl_price": 32.1048,
@@ -73,7 +73,7 @@
       "shares": 15.2625,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 67.6,
+      "score": 67.7,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 7,
@@ -81,13 +81,13 @@
       "macd_hist": 0.3659,
       "ema_fast": 27.98,
       "ema_slow": 26.22,
-      "vol_ratio": 1.61,
+      "vol_ratio": 1.62,
       "atr_pct": 6.13,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "TX",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 46.25,
       "tp_price": 48.5625,
       "sl_price": 45.325,
@@ -108,11 +108,11 @@
       "ema_slow": 44.74,
       "vol_ratio": 2.96,
       "atr_pct": 2.96,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "WAB",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 290.0,
       "tp_price": 304.5,
       "sl_price": 284.2,
@@ -133,11 +133,36 @@
       "ema_slow": 263.89,
       "vol_ratio": 3.38,
       "atr_pct": 2.97,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
+    },
+    {
+      "ticker": "VG",
+      "market_state": "PRE",
+      "entry": 14.82,
+      "tp_price": 15.561,
+      "sl_price": 14.5236,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 33.7382,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 60.6,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 1,
+      "rsi": 68.2,
+      "macd_hist": 0.3311,
+      "ema_fast": 12.85,
+      "ema_slow": 12.52,
+      "vol_ratio": 1.59,
+      "atr_pct": 5.02,
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "GGB",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 4.77,
       "tp_price": 5.0085,
       "sl_price": 4.6746,
@@ -148,7 +173,7 @@
       "shares": 104.8218,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 60.0,
+      "score": 60.5,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 8,
@@ -156,13 +181,13 @@
       "macd_hist": 0.0523,
       "ema_fast": 4.52,
       "ema_slow": 4.44,
-      "vol_ratio": 1.82,
+      "vol_ratio": 1.86,
       "atr_pct": 2.88,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "LBRX",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 35.84,
       "tp_price": 37.632,
       "sl_price": 35.1232,
@@ -183,36 +208,11 @@
       "ema_slow": 30.77,
       "vol_ratio": 2.42,
       "atr_pct": 5.77,
-      "asof": "2026-07-22 19:56 EDT"
-    },
-    {
-      "ticker": "GFR",
-      "market_state": "POST",
-      "entry": 6.65,
-      "tp_price": 6.9825,
-      "sl_price": 6.517,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 75.188,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 56.7,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 11,
-      "rsi": 70.5,
-      "macd_hist": 0.1036,
-      "ema_fast": 6.02,
-      "ema_slow": 5.91,
-      "vol_ratio": 1.69,
-      "atr_pct": 3.9,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
     },
     {
       "ticker": "FCBC",
-      "market_state": "POST",
+      "market_state": "PRE",
       "entry": 46.91,
       "tp_price": 49.2555,
       "sl_price": 45.9718,
@@ -223,7 +223,7 @@
       "shares": 10.6587,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 56.4,
+      "score": 57.2,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 8,
@@ -231,9 +231,34 @@
       "macd_hist": 0.1204,
       "ema_fast": 44.59,
       "ema_slow": 43.7,
-      "vol_ratio": 2.23,
+      "vol_ratio": 2.29,
       "atr_pct": 2.67,
-      "asof": "2026-07-22 19:56 EDT"
+      "asof": "2026-07-23 04:10 EDT"
+    },
+    {
+      "ticker": "GFR",
+      "market_state": "PRE",
+      "entry": 6.65,
+      "tp_price": 6.9825,
+      "sl_price": 6.517,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 75.188,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 57.0,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 11,
+      "rsi": 70.5,
+      "macd_hist": 0.1036,
+      "ema_fast": 6.02,
+      "ema_slow": 5.91,
+      "vol_ratio": 1.72,
+      "atr_pct": 3.97,
+      "asof": "2026-07-23 04:10 EDT"
     }
   ]
 }
