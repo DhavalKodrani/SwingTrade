@@ -2,10 +2,15 @@
 Render layer - three views over the same results:
   cli_table()  : compact terminal table
   to_json()    : structured payload (dashboard data / API)
-  build_html() : self-contained dashboard (GitHub Pages), client-side filter+sort
+  build_html() : self-contained tabbed dashboard (GitHub Pages)
 
-Mirrors the look and the client-side control pattern of supertrend-dashboard so
-all three of your dashboards feel like one family.
+The dashboard has two tabs:
+  Current  - this run's ranked swing candidates (filter/sort).
+  History  - every tracked trigger: first price vs current, a green up / red
+             down change column, and TP/SL-hit status.
+
+Ticker names on BOTH tabs link to TradingView. Mirrors the look and client-side
+control pattern of supertrend-dashboard so all three dashboards feel like family.
 """
 
 from __future__ import annotations
@@ -14,11 +19,21 @@ import json
 import os
 from datetime import datetime
 
-import pandas as pd
-
 from .signals import TradeSetup
 
 STATE_COLORS = {"PRE": "#7c3aed", "LIVE": "#16a34a", "POST": "#0d9488", "CLOSED": "#6b7280"}
+STATUS_META = {
+    "OPEN": ("Open", "#6b7280"),
+    "TP_HIT": ("TP hit ✓", "#16a34a"),
+    "SL_HIT": ("SL hit ✗", "#dc2626"),
+}
+
+
+def _tv(ticker: str) -> str:
+    """TradingView hyperlink for a ticker (opens in a new tab)."""
+    return (f'<a href="https://www.tradingview.com/symbols/{ticker}/" target="_blank" '
+            f'rel="noopener" style="color:#2563eb;text-decoration:none;font-weight:600;">'
+            f'{ticker}↗</a>')
 
 
 # --------------------------------------------------------------------------- #
@@ -73,8 +88,28 @@ def write_json(payload: dict, path: str) -> None:
 # --------------------------------------------------------------------------- #
 # HTML dashboard
 # --------------------------------------------------------------------------- #
-_VIEW_SCRIPT = """
+_STYLE = """
+<style>
+  .tabbar { display:flex; gap:4px; padding:0 24px; border-bottom:1px solid #e5e7eb; }
+  .tab { padding:10px 18px; cursor:pointer; border:none; background:none; font-size:14px;
+         color:#64748b; border-bottom:2px solid transparent; font-weight:600; }
+  .tab.active { color:#0f172a; border-bottom-color:#2563eb; }
+  .sel { padding:4px 8px; border:1px solid #cbd5e1; border-radius:6px; background:#fff;
+         color:#334155; font-size:13px; }
+  table { border-collapse:collapse; width:100%; font-size:14px; }
+  th { padding:10px 12px; background:#f1f5f9; text-align:left; color:#334155; }
+  td { padding:8px 12px; border-bottom:1px solid #e5e7eb; }
+  .wrap { overflow-x:auto; }
+</style>"""
+
+_SCRIPT = """
 <script>
+function showTab(name) {
+  document.getElementById('panel-current').style.display = name === 'current' ? '' : 'none';
+  document.getElementById('panel-history').style.display = name === 'history' ? '' : 'none';
+  document.getElementById('btn-current').className = 'tab' + (name === 'current' ? ' active' : '');
+  document.getElementById('btn-history').className = 'tab' + (name === 'history' ? ' active' : '');
+}
 function applyView() {
   var tbody = document.getElementById('rows');
   if (!tbody) return;
@@ -104,22 +139,19 @@ function applyView() {
 }
 </script>"""
 
-_SELECT = ("padding:4px 8px;border:1px solid #cbd5e1;border-radius:6px;"
-           "background:#fff;color:#334155;font-size:13px;")
 
-
-def _controls() -> str:
+def _current_controls() -> str:
     state_opts = "".join(f'<option value="{s}">{s}</option>' for s in STATE_COLORS)
     return f"""
-    <div style="padding:0 24px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
+    <div style="padding:16px 24px 12px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
                 font-size:13px;color:#334155;">
       <label>Market state:
-        <select id="filterState" onchange="applyView()" style="{_SELECT}">
+        <select id="filterState" onchange="applyView()" class="sel">
           <option value="ALL">All</option>{state_opts}
         </select>
       </label>
       <label>Sort by:
-        <select id="sortField" onchange="applyView()" style="{_SELECT}">
+        <select id="sortField" onchange="applyView()" class="sel">
           <option value="score">Score (default)</option>
           <option value="win">Empirical win %</option>
           <option value="ticker">Ticker</option>
@@ -129,7 +161,7 @@ def _controls() -> str:
         </select>
       </label>
       <label>Order:
-        <select id="sortOrder" onchange="applyView()" style="{_SELECT}">
+        <select id="sortOrder" onchange="applyView()" class="sel">
           <option value="desc">Descending</option>
           <option value="asc">Ascending</option>
         </select>
@@ -138,44 +170,95 @@ def _controls() -> str:
     </div>"""
 
 
-def build_html(results: list[TradeSetup], scanned: int, state: str, cfg) -> str:
+def _current_table(results: list[TradeSetup], cfg) -> str:
+    if not results:
+        return ('<div class="wrap"><table><tbody><tr><td colspan="11" '
+                'style="text-align:center;color:#64748b;padding:16px;">'
+                'No qualifying setups this run.</td></tr></tbody></table></div>')
+    rows = []
+    for r in results[:cfg.output.max_rows]:
+        col = STATE_COLORS.get(r.market_state, "#6b7280")
+        win = f"{r.emp_win_rate*100:.0f}%" if r.emp_win_rate is not None else "n/a"
+        win_sort = r.emp_win_rate if r.emp_win_rate is not None else ""
+        rows.append(f"""
+          <tr data-ticker="{r.ticker}" data-state="{r.market_state}" data-score="{r.score}"
+              data-win="{win_sort}" data-entry="{r.entry}" data-vol="{r.vol_ratio}" data-rsi="{r.rsi}">
+            <td>{_tv(r.ticker)}</td>
+            <td><span style="background:{col};color:#fff;border-radius:6px;padding:2px 10px;
+                font-size:12px;">{r.market_state}</span></td>
+            <td>{r.entry:.2f}</td>
+            <td style="color:#16a34a;">{r.tp_price:.2f}</td>
+            <td style="color:#dc2626;">{r.sl_price:.2f}</td>
+            <td>{r.shares:.2f}</td>
+            <td>+{r.reward_amt:.0f} / -{r.risk_amt:.0f}</td>
+            <td style="font-weight:600;">{r.score:.1f}</td>
+            <td>{win} <span style="color:#94a3b8;">({r.emp_samples})</span></td>
+            <td style="color:#475569;">{r.prob_band}</td>
+            <td style="color:#64748b;">{r.rsi:.0f} / {r.vol_ratio:.1f}x</td>
+          </tr>""")
+    return f"""
+      <div class="wrap">
+      <table style="min-width:960px;">
+        <thead><tr>
+          <th>Ticker</th><th>State</th><th>Entry</th><th>TP +5%</th><th>SL -2%</th>
+          <th>Shares</th><th>Rwd/Risk</th><th>Score</th><th>Win% (n)</th><th>Band</th><th>RSI / Vol</th>
+        </tr></thead>
+        <tbody id="rows">{''.join(rows)}</tbody>
+      </table>
+      </div>"""
+
+
+def _history_table(history: list[dict]) -> str:
+    if not history:
+        return ('<div class="wrap"><table><tbody><tr><td colspan="8" '
+                'style="text-align:center;color:#64748b;padding:16px;">'
+                'No tracked triggers yet - history builds up as scans run.</td></tr></tbody></table></div>')
+    rows = []
+    for h in history:
+        up = h.get("direction") == "UP"
+        arrow, acol = ("▲", "#16a34a") if up else ("▼", "#dc2626")
+        chg = h.get("change_pct", 0.0)
+        label, scol = STATUS_META.get(h.get("status", "OPEN"), ("Open", "#6b7280"))
+        state_col = STATE_COLORS.get(h.get("first_state", "CLOSED"), "#6b7280")
+        rows.append(f"""
+          <tr>
+            <td>{_tv(h['ticker'])}</td>
+            <td>{h['first_price']:.2f}
+                <span style="color:#94a3b8;font-size:12px;">{h.get('first_at','')}</span>
+                <span style="background:{state_col};color:#fff;border-radius:5px;padding:1px 6px;
+                    font-size:11px;margin-left:4px;">{h.get('first_state','')}</span></td>
+            <td style="font-weight:600;">{h.get('current_price', h['first_price']):.2f}</td>
+            <td style="color:{acol};font-weight:600;white-space:nowrap;">{arrow}&nbsp;{chg:+.2f}%</td>
+            <td><span style="background:{scol};color:#fff;border-radius:6px;padding:2px 10px;
+                font-size:12px;">{label}</span></td>
+            <td style="color:#16a34a;">{h.get('tp_price',0):.2f}</td>
+            <td style="color:#dc2626;">{h.get('sl_price',0):.2f}</td>
+            <td style="color:#64748b;">{h.get('last_at','')}</td>
+          </tr>""")
+    return f"""
+      <div class="wrap">
+      <table style="min-width:880px;">
+        <thead><tr>
+          <th>Ticker</th><th>Triggered @ (first)</th><th>Current</th><th>Change</th>
+          <th>Status</th><th>TP +5%</th><th>SL -2%</th><th>Last seen</th>
+        </tr></thead>
+        <tbody>{''.join(rows)}</tbody>
+      </table>
+      </div>"""
+
+
+def build_html(results: list[TradeSetup], history: list[dict], scanned: int, state: str, cfg) -> str:
     ts = datetime.now().strftime("%A %d %B %Y, %H:%M")
     rr = round(cfg.risk.tp_pct / cfg.risk.sl_pct, 2)
     pos = cfg.risk.position_size
-
-    if not results:
-        body = ('<tr><td colspan="11" style="padding:16px;text-align:center;color:#64748b;">'
-                'No qualifying setups this run.</td></tr>')
-    else:
-        cells = []
-        for r in results[:cfg.output.max_rows]:
-            col = STATE_COLORS.get(r.market_state, "#6b7280")
-            win = f"{r.emp_win_rate*100:.0f}%" if r.emp_win_rate is not None else "n/a"
-            win_sort = r.emp_win_rate if r.emp_win_rate is not None else ""
-            cells.append(f"""
-            <tr style="border-bottom:1px solid #e5e7eb;" data-ticker="{r.ticker}"
-                data-state="{r.market_state}" data-score="{r.score}" data-win="{win_sort}"
-                data-entry="{r.entry}" data-vol="{r.vol_ratio}" data-rsi="{r.rsi}">
-              <td style="padding:8px 12px;font-weight:600;">{r.ticker}</td>
-              <td style="padding:8px 12px;"><span style="background:{col};color:#fff;
-                  border-radius:6px;padding:2px 10px;font-size:12px;">{r.market_state}</span></td>
-              <td style="padding:8px 12px;">{r.entry:.2f}</td>
-              <td style="padding:8px 12px;color:#16a34a;">{r.tp_price:.2f}</td>
-              <td style="padding:8px 12px;color:#dc2626;">{r.sl_price:.2f}</td>
-              <td style="padding:8px 12px;">{r.shares:.2f}</td>
-              <td style="padding:8px 12px;">+{r.reward_amt:.0f} / -{r.risk_amt:.0f}</td>
-              <td style="padding:8px 12px;font-weight:600;">{r.score:.1f}</td>
-              <td style="padding:8px 12px;">{win} <span style="color:#94a3b8;">({r.emp_samples})</span></td>
-              <td style="padding:8px 12px;color:#475569;">{r.prob_band}</td>
-              <td style="padding:8px 12px;color:#64748b;">{r.rsi:.0f} / {r.vol_ratio:.1f}x</td>
-            </tr>""")
-        body = "".join(cells)
+    n_hist = len(history)
+    open_hist = sum(1 for h in history if h.get("status") == "OPEN")
 
     return f"""<!DOCTYPE html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>High-Probability Swing Trade Scanner</title></head>
+<title>High-Probability Swing Trade Scanner</title>{_STYLE}</head>
 <body style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f8fafc;margin:0;padding:24px;">
-  <div style="max-width:1040px;margin:auto;background:#fff;border-radius:12px;
+  <div style="max-width:1060px;margin:auto;background:#fff;border-radius:12px;
               box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden;">
     <div style="background:#0f172a;color:#fff;padding:20px 24px;">
       <h1 style="margin:0;font-size:20px;">High-Probability Swing Trade Scanner</h1>
@@ -185,32 +268,38 @@ def build_html(results: list[TradeSetup], scanned: int, state: str, cfg) -> str:
         SL -{cfg.risk.sl_pct*100:.0f}%) - base {pos:.0f}/trade
       </p>
     </div>
-    {_controls()}
-    <div style="overflow-x:auto;">
-    <table style="border-collapse:collapse;width:100%;font-size:14px;min-width:920px;">
-      <thead>
-        <tr style="background:#f1f5f9;text-align:left;color:#334155;">
-          <th style="padding:10px 12px;">Ticker</th><th style="padding:10px 12px;">State</th>
-          <th style="padding:10px 12px;">Entry</th><th style="padding:10px 12px;">TP +5%</th>
-          <th style="padding:10px 12px;">SL -2%</th><th style="padding:10px 12px;">Shares</th>
-          <th style="padding:10px 12px;">Rwd/Risk</th><th style="padding:10px 12px;">Score</th>
-          <th style="padding:10px 12px;">Win% (n)</th><th style="padding:10px 12px;">Band</th>
-          <th style="padding:10px 12px;">RSI / Vol</th>
-        </tr>
-      </thead>
-      <tbody id="rows">{body}</tbody>
-    </table>
+
+    <div class="tabbar">
+      <button id="btn-current" class="tab active" onclick="showTab('current')">Current setups ({len(results)})</button>
+      <button id="btn-history" class="tab" onclick="showTab('history')">History ({n_hist} tracked - {open_hist} open)</button>
     </div>
+
+    <div id="panel-current">
+      {_current_controls()}
+      {_current_table(results, cfg)}
+    </div>
+
+    <div id="panel-history" style="display:none;">
+      <p style="padding:16px 24px 4px;color:#64748b;font-size:13px;">
+        First-triggered price vs current. <span style="color:#16a34a;">▲</span> green = up from
+        trigger, <span style="color:#dc2626;">▼</span> red = down. Status turns to
+        <b style="color:#16a34a;">TP hit</b> once +{cfg.risk.tp_pct*100:.0f}% was reached, or
+        <b style="color:#dc2626;">SL hit</b> at -{cfg.risk.sl_pct*100:.0f}%.
+      </p>
+      {_history_table(history)}
+    </div>
+
     <p style="padding:16px 24px;color:#94a3b8;font-size:12px;line-height:1.6;">
-      <b>Score</b> = 0-100 signal-strength composite (ranking only). <b>Win%</b> = empirical rate
-      at which the identical setup historically reached +{cfg.risk.tp_pct*100:.0f}% before
+      <b>Score</b> = 0-100 signal-strength composite (ranking only). <b>Win%</b> = empirical rate at
+      which the identical setup historically reached +{cfg.risk.tp_pct*100:.0f}% before
       -{cfg.risk.sl_pct*100:.0f}% within {cfg.backtest.hold_days} trading days, over <i>n</i> past
-      occurrences (n/a = too few samples). A high score is <b>not</b> a guaranteed win rate.
-      Educational technical screen only - <b>not financial advice</b>. Verify independently.
+      occurrences (n/a = too few samples). Ticker names link to TradingView. A high score is
+      <b>not</b> a guaranteed win rate. Educational technical screen only -
+      <b>not financial advice</b>. Verify independently.
     </p>
   </div>
-  {_VIEW_SCRIPT}
-  <script>applyView();</script>
+  {_SCRIPT}
+  <script>showTab('current'); applyView();</script>
 </body></html>"""
 
 

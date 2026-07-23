@@ -27,6 +27,7 @@ from email.mime.text import MIMEText
 from swingscan.config import load_config
 from swingscan.market_state import MarketState, market_state, in_active_window, now_in_tz
 from swingscan import render
+from swingscan import history as hist
 from swingscan.scanner import scan
 from swingscan.universe import fetch_universe, parse_ticker_arg
 
@@ -83,11 +84,20 @@ def main(argv: list[str] | None = None) -> int:
 
     results, scanned = scan(tickers, cfg, state=state)
 
+    # ---- update the persistent history tracker ----
+    now = now_in_tz(tz)
+    history = hist.load_history(cfg.output.history_json)
+    history = hist.update_history(history, results, cfg, now, state.value)
+    hist.save_history(history, cfg.output.history_json, now)
+    print(f"History: {len(history)} tracked "
+          f"({sum(1 for h in history if h.get('status') == 'OPEN')} open)")
+
     # ---- render all three views ----
     print(render.cli_table(results, scanned, state.value))
-    render.write_html(render.build_html(results, scanned, state.value, cfg), cfg.output.report_html)
+    render.write_html(render.build_html(results, history, scanned, state.value, cfg),
+                      cfg.output.report_html)
     render.write_json(render.to_json(results, scanned, state.value, cfg), cfg.output.results_json)
-    print(f"\nSaved {cfg.output.report_html} and {cfg.output.results_json}")
+    print(f"\nSaved {cfg.output.report_html}, {cfg.output.results_json}, {cfg.output.history_json}")
 
     if not args.no_email:
         try:

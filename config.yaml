@@ -81,5 +81,8 @@ backtest:
 output:
   report_html: "swing_report.html"
   results_json: "docs/data/results.json"
+  history_json: "docs/data/history.json"   # persistent tracker (committed back)
   max_rows: 60                   # dashboard row cap (ranked by score)
+  history_retention_days: 120    # drop closed entries older than this
+  history_max: 300               # hard cap on tracked entries
   dashboard_url: "https://dhavalkodrani.github.io/SwingTrade/"

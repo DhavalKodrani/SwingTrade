@@ -112,8 +112,8 @@ jobs:
       - name: Commit dashboard data back to repo
         run: |
           rm -f alert_tickers.txt issue_body.md
-          git add docs/data/results.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "Update swing results [skip ci]"
+          git add docs/data/results.json docs/data/history.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Update swing results + history [skip ci]"
           git pull --rebase || true
           git push || echo "Nothing to push"
 
