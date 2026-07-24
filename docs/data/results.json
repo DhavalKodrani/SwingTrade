@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T15:13:33",
+  "generated": "2026-07-24T16:45:55",
   "market_state": "LIVE",
   "scanned": 6924,
   "candidates": 1,
@@ -13,27 +13,27 @@
     {
       "ticker": "RNG",
       "market_state": "LIVE",
-      "entry": 47.5551,
-      "tp_price": 49.9329,
-      "sl_price": 46.604,
+      "entry": 47.97,
+      "tp_price": 50.3685,
+      "sl_price": 47.0106,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 10.5141,
+      "shares": 10.4232,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 55.2,
+      "score": 67.2,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 3,
-      "rsi": 66.9,
-      "macd_hist": 0.3478,
-      "ema_fast": 40.57,
-      "ema_slow": 40.1,
-      "vol_ratio": 1.79,
-      "atr_pct": 5.79,
-      "asof": "2026-07-24 11:05 EDT"
+      "rsi": 67.5,
+      "macd_hist": 0.3743,
+      "ema_fast": 40.61,
+      "ema_slow": 40.11,
+      "vol_ratio": 2.66,
+      "atr_pct": 5.77,
+      "asof": "2026-07-24 12:35 EDT"
     }
   ]
 }
