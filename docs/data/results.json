@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T15:56:47",
+  "generated": "2026-07-27T17:01:49",
   "market_state": "LIVE",
   "scanned": 6922,
   "candidates": 1,
@@ -13,27 +13,27 @@
     {
       "ticker": "IMMR",
       "market_state": "LIVE",
-      "entry": 7.47,
-      "tp_price": 7.8435,
-      "sl_price": 7.3206,
+      "entry": 7.59,
+      "tp_price": 7.9695,
+      "sl_price": 7.4382,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 66.9344,
+      "shares": 65.8762,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 64.4,
-      "prob_band": "Medium",
+      "score": 68.4,
+      "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 5,
-      "rsi": 69.7,
-      "macd_hist": 0.0412,
+      "rsi": 70.8,
+      "macd_hist": 0.0494,
       "ema_fast": 6.66,
-      "ema_slow": 6.51,
-      "vol_ratio": 2.74,
-      "atr_pct": 4.23,
-      "asof": "2026-07-27 11:50 EDT"
+      "ema_slow": 6.52,
+      "vol_ratio": 3.29,
+      "atr_pct": 4.19,
+      "asof": "2026-07-27 12:54 EDT"
     }
   ]
 }
