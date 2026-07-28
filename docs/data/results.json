@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T20:56:18",
+  "generated": "2026-07-28T00:04:51",
   "market_state": "POST",
   "scanned": 6923,
   "candidates": 7,
@@ -13,14 +13,14 @@
     {
       "ticker": "GENI",
       "market_state": "POST",
-      "entry": 7.36,
-      "tp_price": 7.728,
-      "sl_price": 7.2128,
+      "entry": 7.27,
+      "tp_price": 7.6335,
+      "sl_price": 7.1246,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 67.9348,
+      "shares": 68.7758,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 72.3,
@@ -32,20 +32,20 @@
       "ema_fast": 6.45,
       "ema_slow": 6.11,
       "vol_ratio": 2.15,
-      "atr_pct": 5.96,
-      "asof": "2026-07-27 16:48 EDT"
+      "atr_pct": 6.03,
+      "asof": "2026-07-27 19:57 EDT"
     },
     {
       "ticker": "ANDG",
       "market_state": "POST",
-      "entry": 46.94,
-      "tp_price": 49.287,
-      "sl_price": 46.0012,
+      "entry": 47.35,
+      "tp_price": 49.7175,
+      "sl_price": 46.403,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 10.6519,
+      "shares": 10.5597,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 70.4,
@@ -57,8 +57,8 @@
       "ema_fast": 41.62,
       "ema_slow": 38.76,
       "vol_ratio": 1.95,
-      "atr_pct": 5.58,
-      "asof": "2026-07-27 16:48 EDT"
+      "atr_pct": 5.53,
+      "asof": "2026-07-27 19:57 EDT"
     },
     {
       "ticker": "WEX",
@@ -83,7 +83,7 @@
       "ema_slow": 151.07,
       "vol_ratio": 2.11,
       "atr_pct": 3.83,
-      "asof": "2026-07-27 16:48 EDT"
+      "asof": "2026-07-27 19:57 EDT"
     },
     {
       "ticker": "FNKO",
@@ -98,7 +98,7 @@
       "shares": 81.6993,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 68.4,
+      "score": 68.6,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 3,
@@ -106,9 +106,9 @@
       "macd_hist": 0.0229,
       "ema_fast": 5.69,
       "ema_slow": 5.39,
-      "vol_ratio": 1.63,
+      "vol_ratio": 1.64,
       "atr_pct": 5.09,
-      "asof": "2026-07-27 16:48 EDT"
+      "asof": "2026-07-27 19:57 EDT"
     },
     {
       "ticker": "JAKK",
@@ -123,7 +123,7 @@
       "shares": 19.2901,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 67.0,
+      "score": 67.2,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 5,
@@ -131,9 +131,9 @@
       "macd_hist": 0.1939,
       "ema_fast": 23.63,
       "ema_slow": 22.8,
-      "vol_ratio": 2.1,
+      "vol_ratio": 2.12,
       "atr_pct": 3.66,
-      "asof": "2026-07-27 16:48 EDT"
+      "asof": "2026-07-27 19:57 EDT"
     },
     {
       "ticker": "BZ",
@@ -158,7 +158,7 @@
       "ema_slow": 14.26,
       "vol_ratio": 1.57,
       "atr_pct": 3.62,
-      "asof": "2026-07-27 16:48 EDT"
+      "asof": "2026-07-27 19:57 EDT"
     },
     {
       "ticker": "ACNB",
@@ -183,7 +183,7 @@
       "ema_slow": 57.54,
       "vol_ratio": 1.74,
       "atr_pct": 2.36,
-      "asof": "2026-07-27 16:48 EDT"
+      "asof": "2026-07-27 19:57 EDT"
     }
   ]
 }
