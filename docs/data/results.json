@@ -1,13 +1,39 @@
 {
-  "generated": "2026-07-29T15:27:33",
+  "generated": "2026-07-29T16:24:27",
   "market_state": "LIVE",
   "scanned": 6924,
-  "candidates": 0,
+  "candidates": 1,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
     "sl_pct": 0.02,
     "rr_ratio": 2.5
   },
-  "results": []
+  "results": [
+    {
+      "ticker": "ASH",
+      "market_state": "LIVE",
+      "entry": 72.345,
+      "tp_price": 75.9623,
+      "sl_price": 70.8981,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 6.9113,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 58.4,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 2,
+      "rsi": 68.0,
+      "macd_hist": 0.0202,
+      "ema_fast": 66.98,
+      "ema_slow": 63.79,
+      "vol_ratio": 2.06,
+      "atr_pct": 3.26,
+      "asof": "2026-07-29 12:16 EDT"
+    }
+  ]
 }
