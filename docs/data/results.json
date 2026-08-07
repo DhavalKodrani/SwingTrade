@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-07T00:52:44",
+  "generated": "2026-08-07T01:47:09",
   "market_state": "CLOSED",
   "scanned": 6946,
-  "candidates": 52,
+  "candidates": 51,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
@@ -33,7 +33,7 @@
       "ema_slow": 3.2,
       "vol_ratio": 6.38,
       "atr_pct": 8.66,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "CARL",
@@ -58,7 +58,7 @@
       "ema_slow": 11.7,
       "vol_ratio": 2.83,
       "atr_pct": 6.47,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "SABR",
@@ -83,7 +83,7 @@
       "ema_slow": 1.85,
       "vol_ratio": 2.73,
       "atr_pct": 6.15,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ALKT",
@@ -108,7 +108,7 @@
       "ema_slow": 17.47,
       "vol_ratio": 2.58,
       "atr_pct": 4.4,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "IOVA",
@@ -133,7 +133,7 @@
       "ema_slow": 4.4,
       "vol_ratio": 3.76,
       "atr_pct": 7.87,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "NOVTU",
@@ -158,7 +158,7 @@
       "ema_slow": 62.88,
       "vol_ratio": 2.97,
       "atr_pct": 3.73,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "DASH",
@@ -183,7 +183,7 @@
       "ema_slow": 183.4,
       "vol_ratio": 2.2,
       "atr_pct": 3.83,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "AMPL",
@@ -208,7 +208,7 @@
       "ema_slow": 8.47,
       "vol_ratio": 2.31,
       "atr_pct": 5.81,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ALNT",
@@ -233,7 +233,7 @@
       "ema_slow": 87.14,
       "vol_ratio": 2.53,
       "atr_pct": 5.9,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "NAVI",
@@ -258,7 +258,7 @@
       "ema_slow": 8.52,
       "vol_ratio": 2.81,
       "atr_pct": 3.74,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "NOVT",
@@ -283,7 +283,7 @@
       "ema_slow": 149.36,
       "vol_ratio": 2.75,
       "atr_pct": 5.13,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "SDGR",
@@ -308,7 +308,7 @@
       "ema_slow": 15.26,
       "vol_ratio": 2.69,
       "atr_pct": 4.64,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "RELY",
@@ -333,7 +333,7 @@
       "ema_slow": 22.56,
       "vol_ratio": 2.77,
       "atr_pct": 4.21,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ZIP",
@@ -358,7 +358,7 @@
       "ema_slow": 3.8,
       "vol_ratio": 1.93,
       "atr_pct": 6.59,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "PRAX",
@@ -383,7 +383,7 @@
       "ema_slow": 313.78,
       "vol_ratio": 3.72,
       "atr_pct": 5.58,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "SVV",
@@ -408,7 +408,7 @@
       "ema_slow": 9.7,
       "vol_ratio": 2.36,
       "atr_pct": 4.22,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "APPN",
@@ -433,7 +433,7 @@
       "ema_slow": 25.01,
       "vol_ratio": 1.95,
       "atr_pct": 6.11,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "CDRE",
@@ -458,7 +458,7 @@
       "ema_slow": 30.32,
       "vol_ratio": 3.86,
       "atr_pct": 5.14,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "DEO",
@@ -483,7 +483,7 @@
       "ema_slow": 84.07,
       "vol_ratio": 2.95,
       "atr_pct": 2.59,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "VSEC",
@@ -508,7 +508,7 @@
       "ema_slow": 202.27,
       "vol_ratio": 1.95,
       "atr_pct": 4.85,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "AVNT",
@@ -533,7 +533,7 @@
       "ema_slow": 36.81,
       "vol_ratio": 2.56,
       "atr_pct": 3.66,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ATI",
@@ -558,7 +558,7 @@
       "ema_slow": 187.4,
       "vol_ratio": 1.96,
       "atr_pct": 4.69,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "CENT",
@@ -583,7 +583,7 @@
       "ema_slow": 42.55,
       "vol_ratio": 3.16,
       "atr_pct": 3.4,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "EOLS",
@@ -608,32 +608,7 @@
       "ema_slow": 6.25,
       "vol_ratio": 3.5,
       "atr_pct": 5.05,
-      "asof": "2026-08-06 20:45 EDT"
-    },
-    {
-      "ticker": "HNVR",
-      "market_state": "CLOSED",
-      "entry": 27.1,
-      "tp_price": 28.455,
-      "sl_price": 26.558,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 18.4502,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 66.9,
-      "prob_band": "Medium",
-      "emp_win_rate": 0.077,
-      "emp_samples": 13,
-      "rsi": 71.6,
-      "macd_hist": 0.1475,
-      "ema_fast": 25.69,
-      "ema_slow": 24.56,
-      "vol_ratio": 3.17,
-      "atr_pct": 3.02,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "DXPE",
@@ -658,7 +633,7 @@
       "ema_slow": 163.3,
       "vol_ratio": 2.09,
       "atr_pct": 4.95,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "TRUP",
@@ -683,7 +658,7 @@
       "ema_slow": 25.07,
       "vol_ratio": 4.65,
       "atr_pct": 4.74,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "CRON",
@@ -708,7 +683,7 @@
       "ema_slow": 2.77,
       "vol_ratio": 5.07,
       "atr_pct": 3.33,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "FWRD",
@@ -733,7 +708,7 @@
       "ema_slow": 14.33,
       "vol_ratio": 1.92,
       "atr_pct": 6.22,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "DNOW",
@@ -758,7 +733,7 @@
       "ema_slow": 13.63,
       "vol_ratio": 2.46,
       "atr_pct": 3.41,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "BBDC",
@@ -783,7 +758,7 @@
       "ema_slow": 8.42,
       "vol_ratio": 2.98,
       "atr_pct": 2.4,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "LQDT",
@@ -808,7 +783,7 @@
       "ema_slow": 37.89,
       "vol_ratio": 2.58,
       "atr_pct": 3.62,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "NHP",
@@ -833,7 +808,7 @@
       "ema_slow": 14.99,
       "vol_ratio": 4.31,
       "atr_pct": 5.01,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "FA",
@@ -858,7 +833,7 @@
       "ema_slow": 18.83,
       "vol_ratio": 2.4,
       "atr_pct": 5.01,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "IRTC",
@@ -883,7 +858,7 @@
       "ema_slow": 117.29,
       "vol_ratio": 2.18,
       "atr_pct": 4.03,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "TRNS",
@@ -908,7 +883,7 @@
       "ema_slow": 86.94,
       "vol_ratio": 1.76,
       "atr_pct": 4.8,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "WTS",
@@ -933,7 +908,7 @@
       "ema_slow": 341.58,
       "vol_ratio": 2.01,
       "atr_pct": 2.88,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "FSK",
@@ -958,7 +933,7 @@
       "ema_slow": 10.73,
       "vol_ratio": 2.0,
       "atr_pct": 3.15,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "NWSA",
@@ -983,7 +958,7 @@
       "ema_slow": 27.12,
       "vol_ratio": 1.94,
       "atr_pct": 3.08,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "CENTA",
@@ -1008,7 +983,7 @@
       "ema_slow": 37.42,
       "vol_ratio": 2.5,
       "atr_pct": 3.1,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ECPG",
@@ -1033,7 +1008,7 @@
       "ema_slow": 88.52,
       "vol_ratio": 1.8,
       "atr_pct": 3.87,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ITT",
@@ -1058,7 +1033,7 @@
       "ema_slow": 196.25,
       "vol_ratio": 2.34,
       "atr_pct": 3.47,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "TGB",
@@ -1083,7 +1058,7 @@
       "ema_slow": 7.17,
       "vol_ratio": 1.52,
       "atr_pct": 6.45,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "VCTR",
@@ -1108,7 +1083,7 @@
       "ema_slow": 92.24,
       "vol_ratio": 1.92,
       "atr_pct": 3.28,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "AVT",
@@ -1133,7 +1108,7 @@
       "ema_slow": 86.66,
       "vol_ratio": 1.73,
       "atr_pct": 3.95,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "NWS",
@@ -1158,7 +1133,7 @@
       "ema_slow": 30.83,
       "vol_ratio": 1.63,
       "atr_pct": 3.1,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "EROK",
@@ -1183,7 +1158,7 @@
       "ema_slow": 21.56,
       "vol_ratio": 1.83,
       "atr_pct": 4.79,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "ECO",
@@ -1208,7 +1183,7 @@
       "ema_slow": 55.06,
       "vol_ratio": 1.61,
       "atr_pct": 4.04,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "GEN",
@@ -1233,7 +1208,7 @@
       "ema_slow": 25.72,
       "vol_ratio": 1.71,
       "atr_pct": 3.15,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "JCAP",
@@ -1258,7 +1233,7 @@
       "ema_slow": 19.12,
       "vol_ratio": 2.41,
       "atr_pct": 3.07,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "BBVA",
@@ -1283,7 +1258,7 @@
       "ema_slow": 25.3,
       "vol_ratio": 1.56,
       "atr_pct": 2.26,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     },
     {
       "ticker": "SHC",
@@ -1308,7 +1283,7 @@
       "ema_slow": 17.2,
       "vol_ratio": 1.93,
       "atr_pct": 2.78,
-      "asof": "2026-08-06 20:45 EDT"
+      "asof": "2026-08-06 21:40 EDT"
     }
   ]
 }
