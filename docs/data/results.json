@@ -1,13 +1,64 @@
 {
-  "generated": "2026-08-19T14:03:12",
+  "generated": "2026-08-19T15:32:16",
   "market_state": "LIVE",
   "scanned": 6959,
-  "candidates": 0,
+  "candidates": 2,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
     "sl_pct": 0.02,
     "rr_ratio": 2.5
   },
-  "results": []
+  "results": [
+    {
+      "ticker": "SKK",
+      "market_state": "LIVE",
+      "entry": 5.33,
+      "tp_price": 5.5965,
+      "sl_price": 5.2234,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 93.8086,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 70.7,
+      "prob_band": "Medium-High",
+      "emp_win_rate": null,
+      "emp_samples": 1,
+      "rsi": 61.3,
+      "macd_hist": 0.0176,
+      "ema_fast": 4.67,
+      "ema_slow": 4.58,
+      "vol_ratio": 19.74,
+      "atr_pct": 11.23,
+      "asof": "2026-08-19 11:23 EDT"
+    },
+    {
+      "ticker": "TEM",
+      "market_state": "LIVE",
+      "entry": 58.02,
+      "tp_price": 60.921,
+      "sl_price": 56.8596,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 8.6177,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 62.6,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 8,
+      "rsi": 61.8,
+      "macd_hist": 0.8593,
+      "ema_fast": 51.25,
+      "ema_slow": 51.09,
+      "vol_ratio": 1.81,
+      "atr_pct": 6.34,
+      "asof": "2026-08-19 11:23 EDT"
+    }
+  ]
 }
