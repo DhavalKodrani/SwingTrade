@@ -1,13 +1,39 @@
 {
-  "generated": "2026-08-26T14:17:25",
+  "generated": "2026-08-26T16:19:55",
   "market_state": "LIVE",
-  "scanned": 6952,
-  "candidates": 0,
+  "scanned": 6953,
+  "candidates": 1,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
     "sl_pct": 0.02,
     "rr_ratio": 2.5
   },
-  "results": []
+  "results": [
+    {
+      "ticker": "BHVN",
+      "market_state": "LIVE",
+      "entry": 16.08,
+      "tp_price": 16.884,
+      "sl_price": 15.7584,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 31.0945,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 76.7,
+      "prob_band": "Medium-High",
+      "emp_win_rate": null,
+      "emp_samples": 2,
+      "rsi": 63.4,
+      "macd_hist": 0.1009,
+      "ema_fast": 14.34,
+      "ema_slow": 13.91,
+      "vol_ratio": 2.63,
+      "atr_pct": 6.1,
+      "asof": "2026-08-26 12:11 EDT"
+    }
+  ]
 }
