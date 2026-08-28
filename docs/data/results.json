@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-28T03:48:13",
+  "generated": "2026-08-28T06:37:09",
   "market_state": "CLOSED",
   "scanned": 6954,
-  "candidates": 18,
+  "candidates": 20,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
@@ -31,9 +31,9 @@
       "macd_hist": 0.2647,
       "ema_fast": 13.84,
       "ema_slow": 13.32,
-      "vol_ratio": 4.16,
+      "vol_ratio": 4.49,
       "atr_pct": 7.87,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "MESO",
@@ -48,7 +48,7 @@
       "shares": 27.5028,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 78.9,
+      "score": 78.8,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 6,
@@ -57,8 +57,8 @@
       "ema_fast": 16.58,
       "ema_slow": 15.92,
       "vol_ratio": 2.7,
-      "atr_pct": 3.98,
-      "asof": "2026-08-27 23:37 EDT"
+      "atr_pct": 3.99,
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "OOMA",
@@ -83,7 +83,7 @@
       "ema_slow": 20.25,
       "vol_ratio": 3.07,
       "atr_pct": 5.55,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "SRPT",
@@ -108,7 +108,7 @@
       "ema_slow": 17.87,
       "vol_ratio": 2.63,
       "atr_pct": 5.41,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "UPXI",
@@ -131,9 +131,9 @@
       "macd_hist": 0.0387,
       "ema_fast": 0.93,
       "ema_slow": 0.92,
-      "vol_ratio": 4.04,
+      "vol_ratio": 4.05,
       "atr_pct": 7.34,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "OKTA",
@@ -156,9 +156,9 @@
       "macd_hist": 0.4972,
       "ema_fast": 143.04,
       "ema_slow": 136.09,
-      "vol_ratio": 4.69,
+      "vol_ratio": 4.7,
       "atr_pct": 5.4,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "NBTX",
@@ -183,7 +183,7 @@
       "ema_slow": 39.67,
       "vol_ratio": 2.0,
       "atr_pct": 6.6,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "NEO",
@@ -208,7 +208,7 @@
       "ema_slow": 14.87,
       "vol_ratio": 2.65,
       "atr_pct": 4.49,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "FROG",
@@ -223,7 +223,7 @@
       "shares": 4.7465,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 70.2,
+      "score": 70.3,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 8,
@@ -233,7 +233,7 @@
       "ema_slow": 85.79,
       "vol_ratio": 1.76,
       "atr_pct": 5.55,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "TH",
@@ -258,7 +258,7 @@
       "ema_slow": 16.95,
       "vol_ratio": 2.0,
       "atr_pct": 5.71,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "HYPD",
@@ -273,7 +273,7 @@
       "shares": 136.2398,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 66.1,
+      "score": 66.3,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 2,
@@ -281,9 +281,9 @@
       "macd_hist": 0.1007,
       "ema_fast": 3.03,
       "ema_slow": 3.01,
-      "vol_ratio": 2.99,
+      "vol_ratio": 3.01,
       "atr_pct": 7.31,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "TYL",
@@ -308,7 +308,7 @@
       "ema_slow": 323.7,
       "vol_ratio": 1.67,
       "atr_pct": 3.82,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "TAYD",
@@ -331,9 +331,34 @@
       "macd_hist": 0.7538,
       "ema_fast": 56.59,
       "ema_slow": 55.88,
-      "vol_ratio": 2.17,
+      "vol_ratio": 2.16,
       "atr_pct": 4.31,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
+    },
+    {
+      "ticker": "ADSK",
+      "market_state": "CLOSED",
+      "entry": 257.1,
+      "tp_price": 269.955,
+      "sl_price": 251.958,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 1.9448,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 59.4,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 7,
+      "rsi": 69.9,
+      "macd_hist": 0.3406,
+      "ema_fast": 247.78,
+      "ema_slow": 236.0,
+      "vol_ratio": 2.18,
+      "atr_pct": 3.77,
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "TTAN",
@@ -358,32 +383,7 @@
       "ema_slow": 82.74,
       "vol_ratio": 1.87,
       "atr_pct": 4.94,
-      "asof": "2026-08-27 23:37 EDT"
-    },
-    {
-      "ticker": "ADSK",
-      "market_state": "CLOSED",
-      "entry": 257.1,
-      "tp_price": 269.955,
-      "sl_price": 251.958,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 1.9448,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 58.6,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 7,
-      "rsi": 69.9,
-      "macd_hist": 0.3406,
-      "ema_fast": 247.78,
-      "ema_slow": 236.0,
-      "vol_ratio": 2.12,
-      "atr_pct": 3.77,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "CGBD",
@@ -408,7 +408,7 @@
       "ema_slow": 10.85,
       "vol_ratio": 2.64,
       "atr_pct": 2.13,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "BL",
@@ -433,7 +433,7 @@
       "ema_slow": 30.45,
       "vol_ratio": 1.63,
       "atr_pct": 4.69,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
     },
     {
       "ticker": "NOW",
@@ -456,9 +456,59 @@
       "macd_hist": 0.4559,
       "ema_fast": 123.42,
       "ema_slow": 115.52,
-      "vol_ratio": 1.55,
+      "vol_ratio": 1.56,
       "atr_pct": 4.65,
-      "asof": "2026-08-27 23:37 EDT"
+      "asof": "2026-08-28 02:27 EDT"
+    },
+    {
+      "ticker": "AYA",
+      "market_state": "CLOSED",
+      "entry": 29.79,
+      "tp_price": 31.2795,
+      "sl_price": 29.1942,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 16.7842,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 55.5,
+      "prob_band": "Medium",
+      "emp_win_rate": 0.062,
+      "emp_samples": 16,
+      "rsi": 68.5,
+      "macd_hist": 0.0361,
+      "ema_fast": 25.87,
+      "ema_slow": 23.13,
+      "vol_ratio": 1.87,
+      "atr_pct": 5.33,
+      "asof": "2026-08-28 02:27 EDT"
+    },
+    {
+      "ticker": "ADBE",
+      "market_state": "CLOSED",
+      "entry": 288.9999,
+      "tp_price": 303.4499,
+      "sl_price": 283.2199,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 1.7301,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 55.3,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 3,
+      "rsi": 67.9,
+      "macd_hist": 0.6766,
+      "ema_fast": 265.29,
+      "ema_slow": 251.28,
+      "vol_ratio": 1.5,
+      "atr_pct": 3.77,
+      "asof": "2026-08-28 02:27 EDT"
     }
   ]
 }
