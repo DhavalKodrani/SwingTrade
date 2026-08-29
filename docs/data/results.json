@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-28T23:54:56",
-  "market_state": "POST",
+  "generated": "2026-08-29T02:27:28",
+  "market_state": "CLOSED",
   "scanned": 6950,
   "candidates": 8,
   "risk": {
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "MEI",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 18.21,
       "tp_price": 19.1205,
       "sl_price": 17.8458,
@@ -33,19 +33,19 @@
       "ema_slow": 15.16,
       "vol_ratio": 1.71,
       "atr_pct": 7.32,
-      "asof": "2026-08-28 19:47 EDT"
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "FRHC",
-      "market_state": "POST",
-      "entry": 171.35,
-      "tp_price": 179.9175,
-      "sl_price": 167.923,
+      "market_state": "CLOSED",
+      "entry": 175.02,
+      "tp_price": 183.771,
+      "sl_price": 171.5196,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 2.918,
+      "shares": 2.8568,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 73.2,
@@ -57,12 +57,12 @@
       "ema_fast": 160.74,
       "ema_slow": 154.76,
       "vol_ratio": 1.65,
-      "atr_pct": 4.83,
-      "asof": "2026-08-28 19:47 EDT"
+      "atr_pct": 4.73,
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "TII",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 3.06,
       "tp_price": 3.213,
       "sl_price": 2.9988,
@@ -83,11 +83,11 @@
       "ema_slow": 2.45,
       "vol_ratio": 1.81,
       "atr_pct": 6.61,
-      "asof": "2026-08-28 19:47 EDT"
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "RCKT",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 3.82,
       "tp_price": 4.011,
       "sl_price": 3.7436,
@@ -107,20 +107,20 @@
       "ema_fast": 3.55,
       "ema_slow": 3.48,
       "vol_ratio": 2.16,
-      "atr_pct": 5.67,
-      "asof": "2026-08-28 19:47 EDT"
+      "atr_pct": 5.61,
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "BEKE",
-      "market_state": "POST",
-      "entry": 18.3,
-      "tp_price": 19.215,
-      "sl_price": 17.934,
+      "market_state": "CLOSED",
+      "entry": 18.32,
+      "tp_price": 19.236,
+      "sl_price": 17.9536,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 27.3224,
+      "shares": 27.2926,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 67.1,
@@ -133,11 +133,11 @@
       "ema_slow": 16.88,
       "vol_ratio": 3.55,
       "atr_pct": 2.99,
-      "asof": "2026-08-28 19:47 EDT"
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "CFFI",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 91.75,
       "tp_price": 96.3375,
       "sl_price": 89.915,
@@ -158,19 +158,19 @@
       "ema_slow": 83.68,
       "vol_ratio": 2.43,
       "atr_pct": 3.18,
-      "asof": "2026-08-28 19:47 EDT"
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "GAP",
-      "market_state": "POST",
-      "entry": 23.4577,
-      "tp_price": 24.6306,
-      "sl_price": 22.9885,
+      "market_state": "CLOSED",
+      "entry": 23.48,
+      "tp_price": 24.654,
+      "sl_price": 23.0104,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 21.315,
+      "shares": 21.2947,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 65.6,
@@ -182,12 +182,12 @@
       "ema_fast": 20.64,
       "ema_slow": 20.64,
       "vol_ratio": 3.43,
-      "atr_pct": 4.19,
-      "asof": "2026-08-28 19:47 EDT"
+      "atr_pct": 4.18,
+      "asof": "2026-08-28 22:19 EDT"
     },
     {
       "ticker": "HAFN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 8.48,
       "tp_price": 8.904,
       "sl_price": 8.3104,
@@ -208,7 +208,7 @@
       "ema_slow": 7.67,
       "vol_ratio": 1.61,
       "atr_pct": 2.97,
-      "asof": "2026-08-28 19:47 EDT"
+      "asof": "2026-08-28 22:19 EDT"
     }
   ]
 }
