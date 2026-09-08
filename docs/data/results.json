@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-07T22:18:17",
-  "market_state": "POST",
+  "generated": "2026-09-08T01:02:55",
+  "market_state": "CLOSED",
   "scanned": 6953,
   "candidates": 10,
   "risk": {
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "LHSW",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 4.51,
       "tp_price": 4.7355,
       "sl_price": 4.4198,
@@ -33,11 +33,11 @@
       "ema_slow": 3.13,
       "vol_ratio": 6.14,
       "atr_pct": 15.28,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "EPRX",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 8.4,
       "tp_price": 8.82,
       "sl_price": 8.232,
@@ -58,11 +58,11 @@
       "ema_slow": 6.82,
       "vol_ratio": 6.9,
       "atr_pct": 5.48,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "VBNK",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 22.54,
       "tp_price": 23.667,
       "sl_price": 22.0892,
@@ -83,11 +83,11 @@
       "ema_slow": 19.8,
       "vol_ratio": 2.86,
       "atr_pct": 3.79,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "MRX",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 78.0,
       "tp_price": 81.9,
       "sl_price": 76.44,
@@ -108,11 +108,11 @@
       "ema_slow": 67.05,
       "vol_ratio": 2.02,
       "atr_pct": 4.29,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "AGMB",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 15.78,
       "tp_price": 16.569,
       "sl_price": 15.4644,
@@ -133,11 +133,11 @@
       "ema_slow": 13.3,
       "vol_ratio": 1.59,
       "atr_pct": 6.89,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "HSHP",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 18.3122,
       "tp_price": 19.2278,
       "sl_price": 17.946,
@@ -158,11 +158,11 @@
       "ema_slow": 15.65,
       "vol_ratio": 1.55,
       "atr_pct": 3.26,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "DOCU",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 68.4001,
       "tp_price": 71.8201,
       "sl_price": 67.0321,
@@ -183,11 +183,11 @@
       "ema_slow": 57.54,
       "vol_ratio": 2.36,
       "atr_pct": 4.16,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "ANL",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 15.01,
       "tp_price": 15.7605,
       "sl_price": 14.7098,
@@ -208,11 +208,11 @@
       "ema_slow": 12.98,
       "vol_ratio": 2.18,
       "atr_pct": 7.21,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "ODTX",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 28.76,
       "tp_price": 30.198,
       "sl_price": 28.1848,
@@ -233,11 +233,11 @@
       "ema_slow": 21.65,
       "vol_ratio": 1.62,
       "atr_pct": 6.71,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     },
     {
       "ticker": "LCLN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 27.19,
       "tp_price": 28.5495,
       "sl_price": 26.6462,
@@ -258,7 +258,7 @@
       "ema_slow": 23.88,
       "vol_ratio": 1.53,
       "atr_pct": 4.24,
-      "asof": "2026-09-07 18:07 EDT"
+      "asof": "2026-09-07 20:51 EDT"
     }
   ]
 }
