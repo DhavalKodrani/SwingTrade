@@ -1,13 +1,64 @@
 {
-  "generated": "2026-09-11T17:10:57",
+  "generated": "2026-09-11T18:10:40",
   "market_state": "LIVE",
-  "scanned": 6958,
-  "candidates": 0,
+  "scanned": 6959,
+  "candidates": 2,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
     "sl_pct": 0.02,
     "rr_ratio": 2.5
   },
-  "results": []
+  "results": [
+    {
+      "ticker": "MTLS",
+      "market_state": "LIVE",
+      "entry": 7.615,
+      "tp_price": 7.9957,
+      "sl_price": 7.4627,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 65.6599,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 65.2,
+      "prob_band": "Medium",
+      "emp_win_rate": 0.211,
+      "emp_samples": 19,
+      "rsi": 64.5,
+      "macd_hist": 0.0637,
+      "ema_fast": 7.12,
+      "ema_slow": 6.85,
+      "vol_ratio": 1.83,
+      "atr_pct": 3.39,
+      "asof": "2026-09-11 14:03 EDT"
+    },
+    {
+      "ticker": "ODD",
+      "market_state": "LIVE",
+      "entry": 18.85,
+      "tp_price": 19.7925,
+      "sl_price": 18.473,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 26.5252,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 58.4,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 3,
+      "rsi": 68.9,
+      "macd_hist": 0.4728,
+      "ema_fast": 14.78,
+      "ema_slow": 14.55,
+      "vol_ratio": 1.72,
+      "atr_pct": 7.91,
+      "asof": "2026-09-11 14:03 EDT"
+    }
+  ]
 }
