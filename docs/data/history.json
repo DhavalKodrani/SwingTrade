@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T15:09:40.974162-04:00",
+  "updated": "2026-09-25T18:40:36.816510-04:00",
   "count": 300,
   "entries": [
     {
@@ -164,9 +164,9 @@
       "sl_price": 12.9899,
       "score": 84.5,
       "current_price": 13.39,
-      "last_at": "2026-09-25 15:09 EDT",
-      "last_iso": "2026-09-25T15:09:40.974162-04:00",
-      "last_state": "LIVE",
+      "last_at": "2026-09-25 18:40 EDT",
+      "last_iso": "2026-09-25T18:40:36.816510-04:00",
+      "last_state": "POST",
       "peak": 13.55,
       "trough": 13.21,
       "change_pct": 1.02,
@@ -3298,13 +3298,13 @@
       "tp_price": 35.4165,
       "sl_price": 33.0554,
       "score": 72.5,
-      "current_price": 33.82,
-      "last_at": "2026-09-25 15:09 EDT",
-      "last_iso": "2026-09-25T15:09:40.974162-04:00",
-      "last_state": "LIVE",
+      "current_price": 33.76,
+      "last_at": "2026-09-25 18:40 EDT",
+      "last_iso": "2026-09-25T18:40:36.816510-04:00",
+      "last_state": "POST",
       "peak": 33.92,
       "trough": 33.35,
-      "change_pct": 0.27,
+      "change_pct": 0.09,
       "direction": "UP",
       "status": "OPEN"
     },
