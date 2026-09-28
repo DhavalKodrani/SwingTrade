@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T20:14:18",
+  "generated": "2026-09-28T21:07:21",
   "market_state": "POST",
   "scanned": 6965,
   "candidates": 4,
@@ -13,17 +13,17 @@
     {
       "ticker": "AGEN",
       "market_state": "POST",
-      "entry": 9.44,
-      "tp_price": 9.912,
-      "sl_price": 9.2512,
+      "entry": 9.5301,
+      "tp_price": 10.0066,
+      "sl_price": 9.3395,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 52.9661,
+      "shares": 52.4653,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 83.6,
+      "score": 83.8,
       "prob_band": "High (aim 75-80%)",
       "emp_win_rate": null,
       "emp_samples": 7,
@@ -31,21 +31,21 @@
       "macd_hist": 0.1408,
       "ema_fast": 7.99,
       "ema_slow": 7.17,
-      "vol_ratio": 2.72,
-      "atr_pct": 6.04,
-      "asof": "2026-09-28 16:07 EDT"
+      "vol_ratio": 2.73,
+      "atr_pct": 5.99,
+      "asof": "2026-09-28 16:58 EDT"
     },
     {
       "ticker": "PACB",
       "market_state": "POST",
-      "entry": 1.71,
-      "tp_price": 1.7955,
-      "sl_price": 1.6758,
+      "entry": 1.69,
+      "tp_price": 1.7745,
+      "sl_price": 1.6562,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 292.3977,
+      "shares": 295.858,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 78.5,
@@ -56,9 +56,9 @@
       "macd_hist": 0.0381,
       "ema_fast": 1.43,
       "ema_slow": 1.39,
-      "vol_ratio": 3.15,
-      "atr_pct": 6.18,
-      "asof": "2026-09-28 16:07 EDT"
+      "vol_ratio": 3.21,
+      "atr_pct": 6.25,
+      "asof": "2026-09-28 16:58 EDT"
     },
     {
       "ticker": "BRKRP",
@@ -81,9 +81,9 @@
       "macd_hist": 4.9142,
       "ema_fast": 442.58,
       "ema_slow": 430.81,
-      "vol_ratio": 2.17,
+      "vol_ratio": 2.16,
       "atr_pct": 3.35,
-      "asof": "2026-09-28 16:07 EDT"
+      "asof": "2026-09-28 16:58 EDT"
     },
     {
       "ticker": "CAAP",
@@ -106,9 +106,9 @@
       "macd_hist": 0.1135,
       "ema_fast": 24.09,
       "ema_slow": 24.07,
-      "vol_ratio": 4.13,
+      "vol_ratio": 4.27,
       "atr_pct": 3.14,
-      "asof": "2026-09-28 16:07 EDT"
+      "asof": "2026-09-28 16:58 EDT"
     }
   ]
 }
