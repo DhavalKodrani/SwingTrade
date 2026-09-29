@@ -1,13 +1,64 @@
 {
-  "generated": "2026-09-29T18:45:07",
+  "generated": "2026-09-29T19:50:51",
   "market_state": "LIVE",
-  "scanned": 6963,
-  "candidates": 0,
+  "scanned": 6961,
+  "candidates": 2,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
     "sl_pct": 0.02,
     "rr_ratio": 2.5
   },
-  "results": []
+  "results": [
+    {
+      "ticker": "CAAP",
+      "market_state": "LIVE",
+      "entry": 26.025,
+      "tp_price": 27.3262,
+      "sl_price": 25.5045,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 19.2123,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 56.2,
+      "prob_band": "Medium",
+      "emp_win_rate": 0.167,
+      "emp_samples": 12,
+      "rsi": 66.4,
+      "macd_hist": 0.1964,
+      "ema_fast": 24.28,
+      "ema_slow": 24.15,
+      "vol_ratio": 2.51,
+      "atr_pct": 3.12,
+      "asof": "2026-09-29 15:43 EDT"
+    },
+    {
+      "ticker": "BST",
+      "market_state": "LIVE",
+      "entry": 50.0,
+      "tp_price": 52.5,
+      "sl_price": 49.0,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 10.0,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 56.0,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 8,
+      "rsi": 62.2,
+      "macd_hist": 0.0244,
+      "ema_fast": 48.35,
+      "ema_slow": 47.07,
+      "vol_ratio": 2.53,
+      "atr_pct": 1.97,
+      "asof": "2026-09-29 15:43 EDT"
+    }
+  ]
 }
