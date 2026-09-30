@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-29T23:08:48",
-  "market_state": "POST",
+  "generated": "2026-09-30T01:56:06",
+  "market_state": "CLOSED",
   "scanned": 6961,
-  "candidates": 2,
+  "candidates": 3,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "CAAP",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 26.0,
       "tp_price": 27.3,
       "sl_price": 25.48,
@@ -23,7 +23,7 @@
       "shares": 19.2308,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 61.2,
+      "score": 62.7,
       "prob_band": "Medium",
       "emp_win_rate": 0.167,
       "emp_samples": 12,
@@ -31,13 +31,13 @@
       "macd_hist": 0.1948,
       "ema_fast": 24.28,
       "ema_slow": 24.15,
-      "vol_ratio": 2.89,
+      "vol_ratio": 3.06,
       "atr_pct": 3.12,
-      "asof": "2026-09-29 19:02 EDT"
+      "asof": "2026-09-29 21:46 EDT"
     },
     {
       "ticker": "BST",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 49.94,
       "tp_price": 52.437,
       "sl_price": 48.9412,
@@ -58,7 +58,32 @@
       "ema_slow": 47.06,
       "vol_ratio": 2.59,
       "atr_pct": 1.97,
-      "asof": "2026-09-29 19:02 EDT"
+      "asof": "2026-09-29 21:46 EDT"
+    },
+    {
+      "ticker": "LGND",
+      "market_state": "CLOSED",
+      "entry": 310.36,
+      "tp_price": 325.878,
+      "sl_price": 304.1528,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 1.611,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 55.0,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 9,
+      "rsi": 66.2,
+      "macd_hist": 3.2734,
+      "ema_fast": 294.03,
+      "ema_slow": 288.88,
+      "vol_ratio": 1.77,
+      "atr_pct": 3.09,
+      "asof": "2026-09-29 21:46 EDT"
     }
   ]
 }
