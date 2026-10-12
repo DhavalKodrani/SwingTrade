@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T21:52:06",
+  "generated": "2026-10-12T22:30:12",
   "market_state": "POST",
   "scanned": 6951,
   "candidates": 6,
@@ -13,14 +13,14 @@
     {
       "ticker": "CCC",
       "market_state": "POST",
-      "entry": 7.61,
-      "tp_price": 7.9905,
-      "sl_price": 7.4578,
+      "entry": 7.5504,
+      "tp_price": 7.9279,
+      "sl_price": 7.3994,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 65.703,
+      "shares": 66.2217,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 71.8,
@@ -32,8 +32,8 @@
       "ema_fast": 6.8,
       "ema_slow": 6.67,
       "vol_ratio": 2.62,
-      "atr_pct": 4.26,
-      "asof": "2026-10-12 17:43 EDT"
+      "atr_pct": 4.3,
+      "asof": "2026-10-12 18:20 EDT"
     },
     {
       "ticker": "AII",
@@ -58,7 +58,7 @@
       "ema_slow": 24.68,
       "vol_ratio": 2.64,
       "atr_pct": 3.24,
-      "asof": "2026-10-12 17:43 EDT"
+      "asof": "2026-10-12 18:20 EDT"
     },
     {
       "ticker": "BDL",
@@ -83,19 +83,19 @@
       "ema_slow": 44.95,
       "vol_ratio": 2.9,
       "atr_pct": 4.41,
-      "asof": "2026-10-12 17:43 EDT"
+      "asof": "2026-10-12 18:20 EDT"
     },
     {
       "ticker": "AI",
       "market_state": "POST",
-      "entry": 11.6,
-      "tp_price": 12.18,
-      "sl_price": 11.368,
+      "entry": 11.67,
+      "tp_price": 12.2535,
+      "sl_price": 11.4366,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 43.1034,
+      "shares": 42.8449,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 64.6,
@@ -107,8 +107,8 @@
       "ema_fast": 10.99,
       "ema_slow": 10.55,
       "vol_ratio": 2.46,
-      "atr_pct": 4.56,
-      "asof": "2026-10-12 17:43 EDT"
+      "atr_pct": 4.53,
+      "asof": "2026-10-12 18:20 EDT"
     },
     {
       "ticker": "MANH",
@@ -133,7 +133,7 @@
       "ema_slow": 199.96,
       "vol_ratio": 2.04,
       "atr_pct": 3.15,
-      "asof": "2026-10-12 17:43 EDT"
+      "asof": "2026-10-12 18:20 EDT"
     },
     {
       "ticker": "HIPO",
@@ -158,7 +158,7 @@
       "ema_slow": 31.77,
       "vol_ratio": 1.76,
       "atr_pct": 2.87,
-      "asof": "2026-10-12 17:43 EDT"
+      "asof": "2026-10-12 18:20 EDT"
     }
   ]
 }
