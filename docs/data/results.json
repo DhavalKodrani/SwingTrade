@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T20:38:21",
+  "generated": "2026-10-13T23:26:17",
   "market_state": "POST",
   "scanned": 6950,
   "candidates": 1,
@@ -13,14 +13,14 @@
     {
       "ticker": "STGW",
       "market_state": "POST",
-      "entry": 9.13,
-      "tp_price": 9.5865,
-      "sl_price": 8.9474,
+      "entry": 9.1107,
+      "tp_price": 9.5662,
+      "sl_price": 8.9285,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 54.7645,
+      "shares": 54.8805,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 66.3,
@@ -33,7 +33,7 @@
       "ema_slow": 8.43,
       "vol_ratio": 2.02,
       "atr_pct": 3.42,
-      "asof": "2026-10-13 16:27 EDT"
+      "asof": "2026-10-13 19:19 EDT"
     }
   ]
 }
