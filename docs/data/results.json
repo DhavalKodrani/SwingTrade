@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T17:54:43",
+  "generated": "2026-10-15T18:58:57",
   "market_state": "LIVE",
   "scanned": 6950,
   "candidates": 1,
@@ -13,27 +13,27 @@
     {
       "ticker": "VSTM",
       "market_state": "LIVE",
-      "entry": 9.6886,
-      "tp_price": 10.173,
-      "sl_price": 9.4948,
+      "entry": 9.23,
+      "tp_price": 9.6915,
+      "sl_price": 9.0454,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 51.607,
+      "shares": 54.1712,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 72.0,
+      "score": 75.9,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 9,
-      "rsi": 67.8,
-      "macd_hist": 0.0555,
-      "ema_fast": 8.03,
-      "ema_slow": 7.47,
-      "vol_ratio": 2.24,
-      "atr_pct": 7.65,
-      "asof": "2026-10-15 13:46 EDT"
+      "rsi": 64.9,
+      "macd_hist": 0.0265,
+      "ema_fast": 7.99,
+      "ema_slow": 7.45,
+      "vol_ratio": 2.65,
+      "atr_pct": 8.05,
+      "asof": "2026-10-15 14:48 EDT"
     }
   ]
 }
