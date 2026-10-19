@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T20:27:27",
+  "generated": "2026-10-19T23:06:16",
   "market_state": "POST",
   "scanned": 6949,
   "candidates": 6,
@@ -13,14 +13,14 @@
     {
       "ticker": "CLF",
       "market_state": "POST",
-      "entry": 14.13,
-      "tp_price": 14.8365,
-      "sl_price": 13.8474,
+      "entry": 14.17,
+      "tp_price": 14.8785,
+      "sl_price": 13.8866,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 35.3857,
+      "shares": 35.2858,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 81.3,
@@ -31,9 +31,9 @@
       "macd_hist": 0.1233,
       "ema_fast": 12.38,
       "ema_slow": 12.03,
-      "vol_ratio": 4.06,
-      "atr_pct": 5.53,
-      "asof": "2026-10-19 16:18 EDT"
+      "vol_ratio": 4.07,
+      "atr_pct": 5.51,
+      "asof": "2026-10-19 18:56 EDT"
     },
     {
       "ticker": "TALO",
@@ -58,19 +58,19 @@
       "ema_slow": 16.64,
       "vol_ratio": 1.86,
       "atr_pct": 3.44,
-      "asof": "2026-10-19 16:18 EDT"
+      "asof": "2026-10-19 18:56 EDT"
     },
     {
       "ticker": "GTE",
       "market_state": "POST",
-      "entry": 11.34,
-      "tp_price": 11.907,
-      "sl_price": 11.1132,
+      "entry": 11.3395,
+      "tp_price": 11.9064,
+      "sl_price": 11.1127,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 44.0917,
+      "shares": 44.0937,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 63.4,
@@ -81,9 +81,9 @@
       "macd_hist": 0.0676,
       "ema_fast": 10.49,
       "ema_slow": 9.92,
-      "vol_ratio": 1.73,
+      "vol_ratio": 1.74,
       "atr_pct": 3.62,
-      "asof": "2026-10-19 16:18 EDT"
+      "asof": "2026-10-19 18:56 EDT"
     },
     {
       "ticker": "KOF",
@@ -108,19 +108,19 @@
       "ema_slow": 110.07,
       "vol_ratio": 2.19,
       "atr_pct": 2.38,
-      "asof": "2026-10-19 16:18 EDT"
+      "asof": "2026-10-19 18:56 EDT"
     },
     {
       "ticker": "KMTS",
       "market_state": "POST",
-      "entry": 29.37,
-      "tp_price": 30.8385,
-      "sl_price": 28.7826,
+      "entry": 30.3673,
+      "tp_price": 31.8857,
+      "sl_price": 29.76,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 17.0242,
+      "shares": 16.4651,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 57.5,
@@ -132,20 +132,20 @@
       "ema_fast": 27.01,
       "ema_slow": 26.16,
       "vol_ratio": 1.88,
-      "atr_pct": 5.62,
-      "asof": "2026-10-19 16:18 EDT"
+      "atr_pct": 5.44,
+      "asof": "2026-10-19 18:56 EDT"
     },
     {
       "ticker": "LOGI",
       "market_state": "POST",
-      "entry": 107.355,
-      "tp_price": 112.7228,
-      "sl_price": 105.2079,
+      "entry": 107.345,
+      "tp_price": 112.7122,
+      "sl_price": 105.1981,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 4.6574,
+      "shares": 4.6579,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 55.5,
@@ -156,9 +156,9 @@
       "macd_hist": 0.4561,
       "ema_fast": 102.24,
       "ema_slow": 101.27,
-      "vol_ratio": 2.01,
+      "vol_ratio": 2.02,
       "atr_pct": 2.76,
-      "asof": "2026-10-19 16:18 EDT"
+      "asof": "2026-10-19 18:56 EDT"
     }
   ]
 }
