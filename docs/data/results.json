@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-26T23:20:17",
-  "market_state": "POST",
+  "generated": "2026-10-27T01:53:54",
+  "market_state": "CLOSED",
   "scanned": 6946,
-  "candidates": 4,
+  "candidates": 5,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
@@ -12,15 +12,15 @@
   "results": [
     {
       "ticker": "XNCR",
-      "market_state": "POST",
-      "entry": 29.0465,
-      "tp_price": 30.4988,
-      "sl_price": 28.4656,
+      "market_state": "CLOSED",
+      "entry": 29.475,
+      "tp_price": 30.9488,
+      "sl_price": 28.8855,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 17.2138,
+      "shares": 16.9635,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 84.6,
@@ -32,12 +32,12 @@
       "ema_fast": 25.02,
       "ema_slow": 24.08,
       "vol_ratio": 5.08,
-      "atr_pct": 6.38,
-      "asof": "2026-10-26 19:11 EDT"
+      "atr_pct": 6.29,
+      "asof": "2026-10-26 21:46 EDT"
     },
     {
       "ticker": "ASTL",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 4.86,
       "tp_price": 5.103,
       "sl_price": 4.7628,
@@ -56,21 +56,46 @@
       "macd_hist": 0.0693,
       "ema_fast": 4.37,
       "ema_slow": 4.32,
-      "vol_ratio": 3.43,
+      "vol_ratio": 3.5,
       "atr_pct": 4.99,
-      "asof": "2026-10-26 19:11 EDT"
+      "asof": "2026-10-26 21:46 EDT"
     },
     {
-      "ticker": "KFRC",
-      "market_state": "POST",
-      "entry": 59.15,
-      "tp_price": 62.1075,
-      "sl_price": 57.967,
+      "ticker": "RDWR",
+      "market_state": "CLOSED",
+      "entry": 32.3,
+      "tp_price": 33.915,
+      "sl_price": 31.654,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 8.4531,
+      "shares": 15.4799,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 61.0,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 4,
+      "rsi": 63.2,
+      "macd_hist": 0.2277,
+      "ema_fast": 29.81,
+      "ema_slow": 29.39,
+      "vol_ratio": 1.81,
+      "atr_pct": 4.4,
+      "asof": "2026-10-26 21:46 EDT"
+    },
+    {
+      "ticker": "KFRC",
+      "market_state": "CLOSED",
+      "entry": 61.39,
+      "tp_price": 64.4595,
+      "sl_price": 60.1622,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 8.1446,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 55.5,
@@ -82,12 +107,12 @@
       "ema_fast": 53.01,
       "ema_slow": 52.85,
       "vol_ratio": 2.55,
-      "atr_pct": 3.25,
-      "asof": "2026-10-26 19:11 EDT"
+      "atr_pct": 3.14,
+      "asof": "2026-10-26 21:46 EDT"
     },
     {
       "ticker": "OSUR",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 4.15,
       "tp_price": 4.3575,
       "sl_price": 4.067,
@@ -107,8 +132,8 @@
       "ema_fast": 3.85,
       "ema_slow": 3.81,
       "vol_ratio": 1.83,
-      "atr_pct": 4.45,
-      "asof": "2026-10-26 19:11 EDT"
+      "atr_pct": 4.47,
+      "asof": "2026-10-26 21:46 EDT"
     }
   ]
 }
