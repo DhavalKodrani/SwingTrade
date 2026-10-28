@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-27T23:10:55",
-  "market_state": "POST",
+  "generated": "2026-10-28T02:06:20",
+  "market_state": "CLOSED",
   "scanned": 6947,
   "candidates": 11,
   "risk": {
@@ -12,15 +12,15 @@
   "results": [
     {
       "ticker": "EAF",
-      "market_state": "POST",
-      "entry": 11.75,
-      "tp_price": 12.3375,
-      "sl_price": 11.515,
+      "market_state": "CLOSED",
+      "entry": 11.78,
+      "tp_price": 12.369,
+      "sl_price": 11.5444,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 42.5532,
+      "shares": 42.4448,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 82.9,
@@ -32,20 +32,20 @@
       "ema_fast": 8.65,
       "ema_slow": 8.27,
       "vol_ratio": 2.69,
-      "atr_pct": 8.41,
-      "asof": "2026-10-27 19:01 EDT"
+      "atr_pct": 8.39,
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "PRME",
-      "market_state": "POST",
-      "entry": 4.3,
-      "tp_price": 4.515,
-      "sl_price": 4.214,
+      "market_state": "CLOSED",
+      "entry": 4.2892,
+      "tp_price": 4.5037,
+      "sl_price": 4.2034,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 116.2791,
+      "shares": 116.5719,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 77.6,
@@ -57,12 +57,12 @@
       "ema_fast": 3.62,
       "ema_slow": 3.46,
       "vol_ratio": 1.68,
-      "atr_pct": 8.24,
-      "asof": "2026-10-27 19:01 EDT"
+      "atr_pct": 8.26,
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "KNSA",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 89.4015,
       "tp_price": 93.8716,
       "sl_price": 87.6135,
@@ -83,22 +83,22 @@
       "ema_slow": 76.9,
       "vol_ratio": 3.13,
       "atr_pct": 4.83,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "FF",
-      "market_state": "POST",
-      "entry": 6.0975,
-      "tp_price": 6.4024,
-      "sl_price": 5.9756,
+      "market_state": "CLOSED",
+      "entry": 6.0,
+      "tp_price": 6.3,
+      "sl_price": 5.88,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 82.0008,
+      "shares": 83.3333,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 68.8,
+      "score": 68.9,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 6,
@@ -106,13 +106,13 @@
       "macd_hist": 0.0508,
       "ema_fast": 5.48,
       "ema_slow": 5.32,
-      "vol_ratio": 2.42,
-      "atr_pct": 3.28,
-      "asof": "2026-10-27 19:01 EDT"
+      "vol_ratio": 2.43,
+      "atr_pct": 3.34,
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "GDYN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 8.51,
       "tp_price": 8.9355,
       "sl_price": 8.3398,
@@ -133,11 +133,11 @@
       "ema_slow": 7.85,
       "vol_ratio": 1.81,
       "atr_pct": 3.71,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "ESQ",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 129.7,
       "tp_price": 136.185,
       "sl_price": 127.106,
@@ -157,12 +157,12 @@
       "ema_fast": 120.98,
       "ema_slow": 120.1,
       "vol_ratio": 2.67,
-      "atr_pct": 2.86,
-      "asof": "2026-10-27 19:01 EDT"
+      "atr_pct": 2.88,
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "CVLT",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 172.55,
       "tp_price": 181.1775,
       "sl_price": 169.099,
@@ -183,11 +183,11 @@
       "ema_slow": 149.5,
       "vol_ratio": 1.78,
       "atr_pct": 4.33,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "ACU",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 65.7,
       "tp_price": 68.985,
       "sl_price": 64.386,
@@ -208,11 +208,11 @@
       "ema_slow": 61.19,
       "vol_ratio": 2.34,
       "atr_pct": 2.69,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "FSUN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 40.09,
       "tp_price": 42.0945,
       "sl_price": 39.2882,
@@ -233,11 +233,11 @@
       "ema_slow": 38.99,
       "vol_ratio": 3.41,
       "atr_pct": 2.18,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "GKOS",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 181.17,
       "tp_price": 190.2285,
       "sl_price": 177.5466,
@@ -248,7 +248,7 @@
       "shares": 2.7598,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 58.5,
+      "score": 58.6,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 6,
@@ -256,13 +256,13 @@
       "macd_hist": 1.9005,
       "ema_fast": 171.11,
       "ema_slow": 168.04,
-      "vol_ratio": 1.62,
+      "vol_ratio": 1.63,
       "atr_pct": 3.8,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     },
     {
       "ticker": "VCYT",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 50.28,
       "tp_price": 52.794,
       "sl_price": 49.2744,
@@ -283,7 +283,7 @@
       "ema_slow": 45.33,
       "vol_ratio": 1.54,
       "atr_pct": 4.86,
-      "asof": "2026-10-27 19:01 EDT"
+      "asof": "2026-10-27 21:56 EDT"
     }
   ]
 }
