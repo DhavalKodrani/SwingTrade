@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-29T23:30:49",
-  "market_state": "POST",
-  "scanned": 6949,
+  "generated": "2026-10-30T02:28:18",
+  "market_state": "CLOSED",
+  "scanned": 6948,
   "candidates": 24,
   "risk": {
     "position_size": 500,
@@ -12,15 +12,15 @@
   "results": [
     {
       "ticker": "PRCH",
-      "market_state": "POST",
-      "entry": 20.74,
-      "tp_price": 21.777,
-      "sl_price": 20.3252,
+      "market_state": "CLOSED",
+      "entry": 20.85,
+      "tp_price": 21.8925,
+      "sl_price": 20.433,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 24.108,
+      "shares": 23.9808,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 80.3,
@@ -32,12 +32,12 @@
       "ema_fast": 17.69,
       "ema_slow": 16.91,
       "vol_ratio": 3.86,
-      "atr_pct": 5.6,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 5.57,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "AMWL",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 14.98,
       "tp_price": 15.729,
       "sl_price": 14.6804,
@@ -58,11 +58,11 @@
       "ema_slow": 12.78,
       "vol_ratio": 2.21,
       "atr_pct": 5.3,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "FIRY",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 12.8169,
       "tp_price": 13.4577,
       "sl_price": 12.5606,
@@ -83,11 +83,11 @@
       "ema_slow": 11.23,
       "vol_ratio": 2.63,
       "atr_pct": 5.79,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "NRDS",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 11.35,
       "tp_price": 11.9175,
       "sl_price": 11.123,
@@ -108,11 +108,11 @@
       "ema_slow": 9.75,
       "vol_ratio": 2.13,
       "atr_pct": 3.41,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "CSTL",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 38.51,
       "tp_price": 40.4355,
       "sl_price": 37.7398,
@@ -133,11 +133,11 @@
       "ema_slow": 33.21,
       "vol_ratio": 2.13,
       "atr_pct": 4.41,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "REF",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 16.22,
       "tp_price": 17.031,
       "sl_price": 15.8956,
@@ -157,12 +157,12 @@
       "ema_fast": 14.67,
       "ema_slow": 14.35,
       "vol_ratio": 2.7,
-      "atr_pct": 5.29,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 5.31,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "REAL",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 11.75,
       "tp_price": 12.3375,
       "sl_price": 11.515,
@@ -173,7 +173,7 @@
       "shares": 42.5532,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 70.2,
+      "score": 70.9,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 2,
@@ -181,13 +181,38 @@
       "macd_hist": 0.1471,
       "ema_fast": 10.39,
       "ema_slow": 10.25,
-      "vol_ratio": 2.68,
+      "vol_ratio": 2.73,
       "atr_pct": 4.6,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
+    },
+    {
+      "ticker": "KNSA",
+      "market_state": "CLOSED",
+      "entry": 98.0,
+      "tp_price": 102.9,
+      "sl_price": 96.04,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 5.102,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 67.4,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 8,
+      "rsi": 71.9,
+      "macd_hist": 1.8013,
+      "ema_fast": 82.28,
+      "ema_slow": 78.4,
+      "vol_ratio": 1.68,
+      "atr_pct": 4.61,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "PTEN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 12.71,
       "tp_price": 13.3455,
       "sl_price": 12.4558,
@@ -208,47 +233,22 @@
       "ema_slow": 11.6,
       "vol_ratio": 2.02,
       "atr_pct": 3.97,
-      "asof": "2026-10-29 19:24 EDT"
-    },
-    {
-      "ticker": "KNSA",
-      "market_state": "POST",
-      "entry": 98.0,
-      "tp_price": 102.9,
-      "sl_price": 96.04,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 5.102,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 67.3,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 8,
-      "rsi": 71.9,
-      "macd_hist": 1.8013,
-      "ema_fast": 82.28,
-      "ema_slow": 78.4,
-      "vol_ratio": 1.68,
-      "atr_pct": 4.61,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "ATEC",
-      "market_state": "POST",
-      "entry": 8.23,
-      "tp_price": 8.6415,
-      "sl_price": 8.0654,
+      "market_state": "CLOSED",
+      "entry": 8.1799,
+      "tp_price": 8.5889,
+      "sl_price": 8.0163,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 60.7533,
+      "shares": 61.1254,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 65.5,
+      "score": 66.4,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 8,
@@ -256,13 +256,13 @@
       "macd_hist": 0.034,
       "ema_fast": 10.81,
       "ema_slow": 10.34,
-      "vol_ratio": 2.49,
-      "atr_pct": 6.34,
-      "asof": "2026-10-29 19:24 EDT"
+      "vol_ratio": 2.55,
+      "atr_pct": 6.38,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "DBI",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 6.9833,
       "tp_price": 7.3325,
       "sl_price": 6.8436,
@@ -283,11 +283,11 @@
       "ema_slow": 6.09,
       "vol_ratio": 1.91,
       "atr_pct": 4.39,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "CDZI",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 4.85,
       "tp_price": 5.0925,
       "sl_price": 4.753,
@@ -307,12 +307,12 @@
       "ema_fast": 4.08,
       "ema_slow": 3.88,
       "vol_ratio": 1.74,
-      "atr_pct": 6.1,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 6.11,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "BWFG",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 69.65,
       "tp_price": 73.1325,
       "sl_price": 68.257,
@@ -333,19 +333,44 @@
       "ema_slow": 65.74,
       "vol_ratio": 5.46,
       "atr_pct": 2.14,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
-      "ticker": "STGW",
-      "market_state": "POST",
-      "entry": 9.75,
-      "tp_price": 10.2375,
-      "sl_price": 9.555,
+      "ticker": "ASTL",
+      "market_state": "CLOSED",
+      "entry": 4.99,
+      "tp_price": 5.2395,
+      "sl_price": 4.8902,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 51.2821,
+      "shares": 100.2004,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 62.7,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 7,
+      "rsi": 68.4,
+      "macd_hist": 0.0842,
+      "ema_fast": 4.51,
+      "ema_slow": 4.38,
+      "vol_ratio": 2.07,
+      "atr_pct": 5.2,
+      "asof": "2026-10-29 22:17 EDT"
+    },
+    {
+      "ticker": "STGW",
+      "market_state": "CLOSED",
+      "entry": 9.65,
+      "tp_price": 10.1325,
+      "sl_price": 9.457,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 51.8135,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 61.6,
@@ -357,37 +382,12 @@
       "ema_fast": 8.9,
       "ema_slow": 8.65,
       "vol_ratio": 2.47,
-      "atr_pct": 4.3,
-      "asof": "2026-10-29 19:24 EDT"
-    },
-    {
-      "ticker": "ASTL",
-      "market_state": "POST",
-      "entry": 4.99,
-      "tp_price": 5.2395,
-      "sl_price": 4.8902,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 100.2004,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 61.5,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 7,
-      "rsi": 68.4,
-      "macd_hist": 0.0842,
-      "ema_fast": 4.51,
-      "ema_slow": 4.38,
-      "vol_ratio": 1.98,
-      "atr_pct": 5.2,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 4.35,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "MHK",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 129.99,
       "tp_price": 136.4895,
       "sl_price": 127.3902,
@@ -398,7 +398,7 @@
       "shares": 3.8464,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 60.3,
+      "score": 60.7,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 7,
@@ -406,21 +406,21 @@
       "macd_hist": 1.2177,
       "ema_fast": 123.72,
       "ema_slow": 123.71,
-      "vol_ratio": 2.12,
-      "atr_pct": 3.82,
-      "asof": "2026-10-29 19:24 EDT"
+      "vol_ratio": 2.15,
+      "atr_pct": 3.83,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "STNG",
-      "market_state": "POST",
-      "entry": 95.07,
-      "tp_price": 99.8235,
-      "sl_price": 93.1686,
+      "market_state": "CLOSED",
+      "entry": 95.1295,
+      "tp_price": 99.886,
+      "sl_price": 93.2269,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 5.2593,
+      "shares": 5.256,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 60.3,
@@ -433,19 +433,19 @@
       "ema_slow": 83.6,
       "vol_ratio": 1.82,
       "atr_pct": 3.78,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "W",
-      "market_state": "POST",
-      "entry": 118.69,
-      "tp_price": 124.6245,
-      "sl_price": 116.3162,
+      "market_state": "CLOSED",
+      "entry": 119.76,
+      "tp_price": 125.748,
+      "sl_price": 117.3648,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 4.2127,
+      "shares": 4.175,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 60.3,
@@ -457,12 +457,12 @@
       "ema_fast": 110.4,
       "ema_slow": 105.1,
       "vol_ratio": 1.68,
-      "atr_pct": 4.04,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 4.01,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "HLI",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 139.34,
       "tp_price": 146.307,
       "sl_price": 136.5532,
@@ -483,11 +483,11 @@
       "ema_slow": 131.24,
       "vol_ratio": 2.18,
       "atr_pct": 3.26,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "SHOE",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 15.07,
       "tp_price": 15.8235,
       "sl_price": 14.7686,
@@ -508,11 +508,11 @@
       "ema_slow": 13.73,
       "vol_ratio": 2.14,
       "atr_pct": 3.69,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "ARXS",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 54.93,
       "tp_price": 57.6765,
       "sl_price": 53.8314,
@@ -532,12 +532,12 @@
       "ema_fast": 51.83,
       "ema_slow": 50.94,
       "vol_ratio": 2.04,
-      "atr_pct": 5.31,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 5.4,
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "SPOK",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 11.6,
       "tp_price": 12.18,
       "sl_price": 11.368,
@@ -558,11 +558,11 @@
       "ema_slow": 10.61,
       "vol_ratio": 3.76,
       "atr_pct": 3.0,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "WEC",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 115.0,
       "tp_price": 120.75,
       "sl_price": 112.7,
@@ -583,11 +583,11 @@
       "ema_slow": 107.15,
       "vol_ratio": 2.48,
       "atr_pct": 1.77,
-      "asof": "2026-10-29 19:24 EDT"
+      "asof": "2026-10-29 22:17 EDT"
     },
     {
       "ticker": "AOS",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 63.6,
       "tp_price": 66.78,
       "sl_price": 62.328,
@@ -607,8 +607,8 @@
       "ema_fast": 59.93,
       "ema_slow": 59.38,
       "vol_ratio": 1.94,
-      "atr_pct": 2.6,
-      "asof": "2026-10-29 19:24 EDT"
+      "atr_pct": 2.61,
+      "asof": "2026-10-29 22:17 EDT"
     }
   ]
 }
