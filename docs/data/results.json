@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-04T00:09:55",
-  "market_state": "POST",
+  "generated": "2026-11-04T03:00:49",
+  "market_state": "CLOSED",
   "scanned": 6934,
   "candidates": 14,
   "risk": {
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "SIBN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 23.52,
       "tp_price": 24.696,
       "sl_price": 23.0496,
@@ -33,19 +33,19 @@
       "ema_slow": 19.76,
       "vol_ratio": 4.16,
       "atr_pct": 4.96,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "XMTR",
-      "market_state": "POST",
-      "entry": 111.29,
-      "tp_price": 116.8545,
-      "sl_price": 109.0642,
+      "market_state": "CLOSED",
+      "entry": 109.8,
+      "tp_price": 115.29,
+      "sl_price": 107.604,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 4.4928,
+      "shares": 4.5537,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 72.4,
@@ -57,12 +57,12 @@
       "ema_fast": 98.01,
       "ema_slow": 96.52,
       "vol_ratio": 2.99,
-      "atr_pct": 7.31,
-      "asof": "2026-11-03 19:01 EST"
+      "atr_pct": 7.47,
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "BTSGU",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 224.93,
       "tp_price": 236.1765,
       "sl_price": 220.4314,
@@ -83,11 +83,11 @@
       "ema_slow": 201.07,
       "vol_ratio": 6.95,
       "atr_pct": 2.72,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "ASTL",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 5.3,
       "tp_price": 5.565,
       "sl_price": 5.194,
@@ -98,7 +98,7 @@
       "shares": 94.3396,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 68.1,
+      "score": 68.9,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 7,
@@ -106,13 +106,13 @@
       "macd_hist": 0.08,
       "ema_fast": 4.65,
       "ema_slow": 4.46,
-      "vol_ratio": 1.79,
+      "vol_ratio": 1.85,
       "atr_pct": 5.28,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "REF",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 16.99,
       "tp_price": 17.8395,
       "sl_price": 16.6502,
@@ -132,12 +132,12 @@
       "ema_fast": 15.09,
       "ema_slow": 14.57,
       "vol_ratio": 1.92,
-      "atr_pct": 5.36,
-      "asof": "2026-11-03 19:01 EST"
+      "atr_pct": 5.37,
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "TIC",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 10.42,
       "tp_price": 10.941,
       "sl_price": 10.2116,
@@ -148,7 +148,7 @@
       "shares": 47.9846,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 66.7,
+      "score": 66.8,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 0,
@@ -158,19 +158,19 @@
       "ema_slow": 9.22,
       "vol_ratio": 1.84,
       "atr_pct": 3.55,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "UPWK",
-      "market_state": "POST",
-      "entry": 9.93,
-      "tp_price": 10.4265,
-      "sl_price": 9.7314,
+      "market_state": "CLOSED",
+      "entry": 9.96,
+      "tp_price": 10.458,
+      "sl_price": 9.7608,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 50.3525,
+      "shares": 50.2008,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 65.9,
@@ -183,11 +183,11 @@
       "ema_slow": 8.84,
       "vol_ratio": 2.96,
       "atr_pct": 4.09,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "ZYME",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 30.3,
       "tp_price": 31.815,
       "sl_price": 29.694,
@@ -208,11 +208,11 @@
       "ema_slow": 27.01,
       "vol_ratio": 1.73,
       "atr_pct": 3.73,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "RACE",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 414.77,
       "tp_price": 435.5085,
       "sl_price": 406.4746,
@@ -233,11 +233,11 @@
       "ema_slow": 397.95,
       "vol_ratio": 2.7,
       "atr_pct": 1.84,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "CE",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 50.36,
       "tp_price": 52.878,
       "sl_price": 49.3528,
@@ -248,7 +248,7 @@
       "shares": 9.9285,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 60.1,
+      "score": 61.7,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 5,
@@ -256,13 +256,13 @@
       "macd_hist": 0.2504,
       "ema_fast": 47.59,
       "ema_slow": 46.81,
-      "vol_ratio": 2.24,
-      "atr_pct": 3.55,
-      "asof": "2026-11-03 19:01 EST"
+      "vol_ratio": 2.36,
+      "atr_pct": 3.57,
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "VRDN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 25.15,
       "tp_price": 26.4075,
       "sl_price": 24.647,
@@ -283,11 +283,11 @@
       "ema_slow": 21.69,
       "vol_ratio": 1.85,
       "atr_pct": 4.24,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "FRPT",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 69.6,
       "tp_price": 73.08,
       "sl_price": 68.208,
@@ -308,11 +308,11 @@
       "ema_slow": 64.75,
       "vol_ratio": 2.14,
       "atr_pct": 3.58,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "CWEN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 34.39,
       "tp_price": 36.1095,
       "sl_price": 33.7022,
@@ -333,11 +333,11 @@
       "ema_slow": 31.46,
       "vol_ratio": 2.11,
       "atr_pct": 2.73,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     },
     {
       "ticker": "FWRG",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 13.63,
       "tp_price": 14.3115,
       "sl_price": 13.3574,
@@ -358,7 +358,7 @@
       "ema_slow": 11.63,
       "vol_ratio": 1.7,
       "atr_pct": 4.99,
-      "asof": "2026-11-03 19:01 EST"
+      "asof": "2026-11-03 21:51 EST"
     }
   ]
 }
