@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T23:06:55",
+  "generated": "2026-11-09T23:47:27",
   "market_state": "POST",
   "scanned": 6928,
   "candidates": 29,
@@ -33,7 +33,7 @@
       "ema_slow": 9.41,
       "vol_ratio": 3.9,
       "atr_pct": 5.09,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "VIR",
@@ -58,7 +58,7 @@
       "ema_slow": 10.99,
       "vol_ratio": 3.59,
       "atr_pct": 5.97,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "MNTK",
@@ -83,19 +83,19 @@
       "ema_slow": 2.32,
       "vol_ratio": 1.72,
       "atr_pct": 7.98,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "TGTX",
       "market_state": "POST",
-      "entry": 63.55,
-      "tp_price": 66.7275,
-      "sl_price": 62.279,
+      "entry": 63.11,
+      "tp_price": 66.2655,
+      "sl_price": 61.8478,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 7.8678,
+      "shares": 7.9227,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 76.0,
@@ -107,20 +107,20 @@
       "ema_fast": 57.96,
       "ema_slow": 55.94,
       "vol_ratio": 2.64,
-      "atr_pct": 4.79,
-      "asof": "2026-11-09 17:58 EST"
+      "atr_pct": 4.82,
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "JHX",
       "market_state": "POST",
-      "entry": 29.94,
-      "tp_price": 31.437,
-      "sl_price": 29.3412,
+      "entry": 29.54,
+      "tp_price": 31.017,
+      "sl_price": 28.9492,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 16.7001,
+      "shares": 16.9262,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 75.9,
@@ -132,20 +132,20 @@
       "ema_fast": 27.27,
       "ema_slow": 26.9,
       "vol_ratio": 3.63,
-      "atr_pct": 4.02,
-      "asof": "2026-11-09 17:58 EST"
+      "atr_pct": 4.07,
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "SDGR",
       "market_state": "POST",
-      "entry": 33.39,
-      "tp_price": 35.0595,
-      "sl_price": 32.7222,
+      "entry": 33.21,
+      "tp_price": 34.8705,
+      "sl_price": 32.5458,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 14.9745,
+      "shares": 15.0557,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 72.5,
@@ -157,8 +157,8 @@
       "ema_fast": 27.7,
       "ema_slow": 25.6,
       "vol_ratio": 1.53,
-      "atr_pct": 7.04,
-      "asof": "2026-11-09 17:58 EST"
+      "atr_pct": 7.08,
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "VCTR",
@@ -183,7 +183,7 @@
       "ema_slow": 110.77,
       "vol_ratio": 2.25,
       "atr_pct": 4.0,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "FLGT",
@@ -208,7 +208,7 @@
       "ema_slow": 20.76,
       "vol_ratio": 2.77,
       "atr_pct": 5.07,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "KINS",
@@ -233,7 +233,7 @@
       "ema_slow": 19.43,
       "vol_ratio": 2.73,
       "atr_pct": 3.47,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "CYRX",
@@ -258,7 +258,7 @@
       "ema_slow": 17.13,
       "vol_ratio": 2.1,
       "atr_pct": 5.21,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "SI",
@@ -283,7 +283,7 @@
       "ema_slow": 19.42,
       "vol_ratio": 2.28,
       "atr_pct": 5.91,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "SBH",
@@ -308,7 +308,7 @@
       "ema_slow": 16.99,
       "vol_ratio": 1.61,
       "atr_pct": 3.67,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "CCSI",
@@ -333,19 +333,19 @@
       "ema_slow": 36.95,
       "vol_ratio": 2.7,
       "atr_pct": 4.65,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "CHYM",
       "market_state": "POST",
-      "entry": 33.0,
-      "tp_price": 34.65,
-      "sl_price": 32.34,
+      "entry": 32.7,
+      "tp_price": 34.335,
+      "sl_price": 32.046,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 15.1515,
+      "shares": 15.2905,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 63.4,
@@ -357,8 +357,8 @@
       "ema_fast": 29.68,
       "ema_slow": 29.19,
       "vol_ratio": 2.01,
-      "atr_pct": 4.41,
-      "asof": "2026-11-09 17:58 EST"
+      "atr_pct": 4.45,
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "ORKA",
@@ -383,7 +383,7 @@
       "ema_slow": 89.87,
       "vol_ratio": 1.73,
       "atr_pct": 5.05,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "ROIV",
@@ -408,7 +408,7 @@
       "ema_slow": 36.41,
       "vol_ratio": 1.55,
       "atr_pct": 3.94,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "ETON",
@@ -433,7 +433,7 @@
       "ema_slow": 52.81,
       "vol_ratio": 2.27,
       "atr_pct": 5.84,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "FERG",
@@ -458,7 +458,7 @@
       "ema_slow": 231.08,
       "vol_ratio": 2.4,
       "atr_pct": 3.24,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "GRDN",
@@ -483,7 +483,7 @@
       "ema_slow": 41.04,
       "vol_ratio": 2.06,
       "atr_pct": 4.21,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "LILA",
@@ -508,7 +508,7 @@
       "ema_slow": 8.37,
       "vol_ratio": 2.01,
       "atr_pct": 3.77,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "SIBN",
@@ -533,7 +533,7 @@
       "ema_slow": 20.5,
       "vol_ratio": 1.54,
       "atr_pct": 5.1,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "ALGN",
@@ -558,19 +558,19 @@
       "ema_slow": 154.62,
       "vol_ratio": 2.06,
       "atr_pct": 3.6,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "PTON",
       "market_state": "POST",
-      "entry": 5.95,
-      "tp_price": 6.2475,
-      "sl_price": 5.831,
+      "entry": 5.93,
+      "tp_price": 6.2265,
+      "sl_price": 5.8114,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 84.0336,
+      "shares": 84.317,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 57.4,
@@ -582,8 +582,8 @@
       "ema_fast": 5.38,
       "ema_slow": 5.3,
       "vol_ratio": 2.19,
-      "atr_pct": 4.31,
-      "asof": "2026-11-09 17:58 EST"
+      "atr_pct": 4.33,
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "BWMX",
@@ -608,7 +608,7 @@
       "ema_slow": 16.23,
       "vol_ratio": 2.52,
       "atr_pct": 3.58,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "CMCO",
@@ -632,8 +632,8 @@
       "ema_fast": 16.3,
       "ema_slow": 16.19,
       "vol_ratio": 1.77,
-      "atr_pct": 5.95,
-      "asof": "2026-11-09 17:58 EST"
+      "atr_pct": 5.99,
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "RGLD",
@@ -658,7 +658,7 @@
       "ema_slow": 240.99,
       "vol_ratio": 1.73,
       "atr_pct": 3.52,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "JOE",
@@ -683,7 +683,7 @@
       "ema_slow": 67.48,
       "vol_ratio": 1.96,
       "atr_pct": 3.08,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "GAU",
@@ -708,7 +708,7 @@
       "ema_slow": 2.12,
       "vol_ratio": 1.56,
       "atr_pct": 5.73,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     },
     {
       "ticker": "VBNK",
@@ -733,7 +733,7 @@
       "ema_slow": 22.15,
       "vol_ratio": 1.74,
       "atr_pct": 3.45,
-      "asof": "2026-11-09 17:58 EST"
+      "asof": "2026-11-09 18:39 EST"
     }
   ]
 }
