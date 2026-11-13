@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T21:47:53",
+  "generated": "2026-11-13T00:43:38",
   "market_state": "POST",
   "scanned": 6924,
   "candidates": 4,
@@ -13,14 +13,14 @@
     {
       "ticker": "CHA",
       "market_state": "POST",
-      "entry": 13.679,
-      "tp_price": 14.363,
-      "sl_price": 13.4054,
+      "entry": 13.6,
+      "tp_price": 14.28,
+      "sl_price": 13.328,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 36.5524,
+      "shares": 36.7647,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 73.0,
@@ -32,8 +32,8 @@
       "ema_fast": 12.41,
       "ema_slow": 12.04,
       "vol_ratio": 3.34,
-      "atr_pct": 3.83,
-      "asof": "2026-11-12 16:40 EST"
+      "atr_pct": 3.85,
+      "asof": "2026-11-12 19:34 EST"
     },
     {
       "ticker": "PUBM",
@@ -58,22 +58,22 @@
       "ema_slow": 17.13,
       "vol_ratio": 2.17,
       "atr_pct": 5.89,
-      "asof": "2026-11-12 16:40 EST"
+      "asof": "2026-11-12 19:34 EST"
     },
     {
       "ticker": "HTFL",
       "market_state": "POST",
-      "entry": 58.0,
-      "tp_price": 60.9,
-      "sl_price": 56.84,
+      "entry": 58.7,
+      "tp_price": 61.635,
+      "sl_price": 57.526,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 8.6207,
+      "shares": 8.5179,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 63.4,
+      "score": 64.2,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 4,
@@ -81,9 +81,9 @@
       "macd_hist": 0.0252,
       "ema_fast": 55.47,
       "ema_slow": 51.41,
-      "vol_ratio": 2.35,
-      "atr_pct": 5.74,
-      "asof": "2026-11-12 16:40 EST"
+      "vol_ratio": 2.41,
+      "atr_pct": 5.68,
+      "asof": "2026-11-12 19:34 EST"
     },
     {
       "ticker": "CAE",
@@ -98,7 +98,7 @@
       "shares": 17.762,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 55.7,
+      "score": 55.8,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 5,
@@ -108,7 +108,7 @@
       "ema_slow": 25.48,
       "vol_ratio": 2.02,
       "atr_pct": 3.29,
-      "asof": "2026-11-12 16:40 EST"
+      "asof": "2026-11-12 19:34 EST"
     }
   ]
 }
