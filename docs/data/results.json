@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-14T00:29:34",
-  "market_state": "POST",
+  "generated": "2026-11-14T02:55:07",
+  "market_state": "CLOSED",
   "scanned": 6929,
   "candidates": 6,
   "risk": {
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "PUBM",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 20.61,
       "tp_price": 21.6405,
       "sl_price": 20.1978,
@@ -33,19 +33,19 @@
       "ema_slow": 17.26,
       "vol_ratio": 3.04,
       "atr_pct": 5.76,
-      "asof": "2026-11-13 19:23 EST"
+      "asof": "2026-11-13 21:50 EST"
     },
     {
       "ticker": "WWW",
-      "market_state": "POST",
-      "entry": 24.89,
-      "tp_price": 26.1345,
-      "sl_price": 24.3922,
+      "market_state": "CLOSED",
+      "entry": 24.9,
+      "tp_price": 26.145,
+      "sl_price": 24.402,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 20.0884,
+      "shares": 20.0803,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 78.6,
@@ -58,11 +58,11 @@
       "ema_slow": 20.46,
       "vol_ratio": 2.47,
       "atr_pct": 4.53,
-      "asof": "2026-11-13 19:23 EST"
+      "asof": "2026-11-13 21:50 EST"
     },
     {
       "ticker": "CHA",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 14.37,
       "tp_price": 15.0885,
       "sl_price": 14.0826,
@@ -73,7 +73,7 @@
       "shares": 34.7947,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 70.6,
+      "score": 70.8,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 3,
@@ -81,13 +81,13 @@
       "macd_hist": 0.1371,
       "ema_fast": 12.6,
       "ema_slow": 12.13,
-      "vol_ratio": 2.29,
+      "vol_ratio": 2.31,
       "atr_pct": 3.99,
-      "asof": "2026-11-13 19:23 EST"
+      "asof": "2026-11-13 21:50 EST"
     },
     {
       "ticker": "TOP",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 16.97,
       "tp_price": 17.8185,
       "sl_price": 16.6306,
@@ -107,23 +107,23 @@
       "ema_fast": 14.31,
       "ema_slow": 14.08,
       "vol_ratio": 1.79,
-      "atr_pct": 10.32,
-      "asof": "2026-11-13 19:23 EST"
+      "atr_pct": 10.41,
+      "asof": "2026-11-13 21:50 EST"
     },
     {
       "ticker": "CHYM",
-      "market_state": "POST",
-      "entry": 34.64,
-      "tp_price": 36.372,
-      "sl_price": 33.9472,
+      "market_state": "CLOSED",
+      "entry": 34.6918,
+      "tp_price": 36.4264,
+      "sl_price": 33.998,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 14.4342,
+      "shares": 14.4126,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 58.4,
+      "score": 58.5,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 0,
@@ -131,13 +131,13 @@
       "macd_hist": 0.49,
       "ema_fast": 30.81,
       "ema_slow": 29.76,
-      "vol_ratio": 1.55,
+      "vol_ratio": 1.56,
       "atr_pct": 3.88,
-      "asof": "2026-11-13 19:23 EST"
+      "asof": "2026-11-13 21:50 EST"
     },
     {
       "ticker": "GRVY",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 70.8,
       "tp_price": 74.34,
       "sl_price": 69.384,
@@ -158,7 +158,7 @@
       "ema_slow": 67.88,
       "vol_ratio": 2.44,
       "atr_pct": 3.06,
-      "asof": "2026-11-13 19:23 EST"
+      "asof": "2026-11-13 21:50 EST"
     }
   ]
 }
