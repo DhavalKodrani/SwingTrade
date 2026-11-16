@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T22:57:54",
+  "generated": "2026-11-16T23:41:14",
   "market_state": "POST",
   "scanned": 6924,
   "candidates": 6,
@@ -33,7 +33,7 @@
       "ema_slow": 17.4,
       "vol_ratio": 2.63,
       "atr_pct": 5.76,
-      "asof": "2026-11-16 17:53 EST"
+      "asof": "2026-11-16 18:36 EST"
     },
     {
       "ticker": "FENC",
@@ -58,7 +58,7 @@
       "ema_slow": 10.7,
       "vol_ratio": 3.85,
       "atr_pct": 6.1,
-      "asof": "2026-11-16 17:53 EST"
+      "asof": "2026-11-16 18:36 EST"
     },
     {
       "ticker": "CGON",
@@ -83,7 +83,7 @@
       "ema_slow": 68.82,
       "vol_ratio": 6.02,
       "atr_pct": 6.45,
-      "asof": "2026-11-16 17:53 EST"
+      "asof": "2026-11-16 18:36 EST"
     },
     {
       "ticker": "LUXE",
@@ -108,7 +108,7 @@
       "ema_slow": 9.53,
       "vol_ratio": 2.77,
       "atr_pct": 4.15,
-      "asof": "2026-11-16 17:53 EST"
+      "asof": "2026-11-16 18:36 EST"
     },
     {
       "ticker": "ATAT",
@@ -133,19 +133,19 @@
       "ema_slow": 34.08,
       "vol_ratio": 1.72,
       "atr_pct": 3.59,
-      "asof": "2026-11-16 17:53 EST"
+      "asof": "2026-11-16 18:36 EST"
     },
     {
       "ticker": "KVYO",
       "market_state": "POST",
-      "entry": 22.89,
-      "tp_price": 24.0345,
-      "sl_price": 22.4322,
+      "entry": 23.0,
+      "tp_price": 24.15,
+      "sl_price": 22.54,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 21.8436,
+      "shares": 21.7391,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 56.9,
@@ -157,8 +157,8 @@
       "ema_fast": 20.64,
       "ema_slow": 19.26,
       "vol_ratio": 1.77,
-      "atr_pct": 5.01,
-      "asof": "2026-11-16 17:53 EST"
+      "atr_pct": 4.98,
+      "asof": "2026-11-16 18:36 EST"
     }
   ]
 }
