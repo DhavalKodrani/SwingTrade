@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T21:32:27",
+  "generated": "2026-11-18T22:31:18",
   "market_state": "POST",
   "scanned": 6921,
   "candidates": 7,
@@ -33,7 +33,7 @@
       "ema_slow": 21.0,
       "vol_ratio": 2.99,
       "atr_pct": 4.45,
-      "asof": "2026-11-18 16:26 EST"
+      "asof": "2026-11-18 17:26 EST"
     },
     {
       "ticker": "OBIO",
@@ -58,19 +58,19 @@
       "ema_slow": 5.87,
       "vol_ratio": 2.08,
       "atr_pct": 6.71,
-      "asof": "2026-11-18 16:26 EST"
+      "asof": "2026-11-18 17:26 EST"
     },
     {
       "ticker": "FIRY",
       "market_state": "POST",
-      "entry": 13.89,
-      "tp_price": 14.5845,
-      "sl_price": 13.6122,
+      "entry": 13.88,
+      "tp_price": 14.574,
+      "sl_price": 13.6024,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 35.9971,
+      "shares": 36.0231,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 68.2,
@@ -82,23 +82,23 @@
       "ema_fast": 11.96,
       "ema_slow": 11.56,
       "vol_ratio": 2.11,
-      "atr_pct": 8.06,
-      "asof": "2026-11-18 16:26 EST"
+      "atr_pct": 8.07,
+      "asof": "2026-11-18 17:26 EST"
     },
     {
       "ticker": "TGT",
       "market_state": "POST",
-      "entry": 166.5,
-      "tp_price": 174.825,
-      "sl_price": 163.17,
+      "entry": 166.7,
+      "tp_price": 175.035,
+      "sl_price": 163.366,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 3.003,
+      "shares": 2.9994,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 66.9,
+      "score": 67.0,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 0,
@@ -108,7 +108,7 @@
       "ema_slow": 155.53,
       "vol_ratio": 2.79,
       "atr_pct": 3.27,
-      "asof": "2026-11-18 16:26 EST"
+      "asof": "2026-11-18 17:26 EST"
     },
     {
       "ticker": "CAKE",
@@ -133,7 +133,7 @@
       "ema_slow": 108.26,
       "vol_ratio": 1.57,
       "atr_pct": 4.17,
-      "asof": "2026-11-18 16:26 EST"
+      "asof": "2026-11-18 17:26 EST"
     },
     {
       "ticker": "WMG",
@@ -148,7 +148,7 @@
       "shares": 15.1699,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 55.4,
+      "score": 55.5,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 1,
@@ -156,21 +156,21 @@
       "macd_hist": 0.038,
       "ema_fast": 31.5,
       "ema_slow": 30.2,
-      "vol_ratio": 2.38,
+      "vol_ratio": 2.39,
       "atr_pct": 2.58,
-      "asof": "2026-11-18 16:26 EST"
+      "asof": "2026-11-18 17:26 EST"
     },
     {
       "ticker": "LCLN",
       "market_state": "POST",
-      "entry": 28.19,
-      "tp_price": 29.5995,
-      "sl_price": 27.6262,
+      "entry": 28.18,
+      "tp_price": 29.589,
+      "sl_price": 27.6164,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 17.7368,
+      "shares": 17.7431,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 55.3,
@@ -183,7 +183,7 @@
       "ema_slow": 25.29,
       "vol_ratio": 1.77,
       "atr_pct": 4.38,
-      "asof": "2026-11-18 16:26 EST"
+      "asof": "2026-11-18 17:26 EST"
     }
   ]
 }
