@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T21:38:36",
+  "generated": "2026-11-19T22:38:41",
   "market_state": "POST",
   "scanned": 6922,
   "candidates": 5,
@@ -33,22 +33,22 @@
       "ema_slow": 8.68,
       "vol_ratio": 5.24,
       "atr_pct": 8.36,
-      "asof": "2026-11-19 16:31 EST"
+      "asof": "2026-11-19 17:31 EST"
     },
     {
       "ticker": "GME",
       "market_state": "POST",
-      "entry": 26.92,
-      "tp_price": 28.266,
-      "sl_price": 26.3816,
+      "entry": 27.0975,
+      "tp_price": 28.4524,
+      "sl_price": 26.5556,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 18.5736,
+      "shares": 18.4519,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 74.9,
+      "score": 75.0,
       "prob_band": "Medium-High",
       "emp_win_rate": null,
       "emp_samples": 6,
@@ -57,23 +57,23 @@
       "ema_fast": 25.43,
       "ema_slow": 24.45,
       "vol_ratio": 2.65,
-      "atr_pct": 3.8,
-      "asof": "2026-11-19 16:31 EST"
+      "atr_pct": 3.78,
+      "asof": "2026-11-19 17:31 EST"
     },
     {
       "ticker": "NCPL",
       "market_state": "POST",
-      "entry": 3.36,
-      "tp_price": 3.528,
-      "sl_price": 3.2928,
+      "entry": 3.411,
+      "tp_price": 3.5816,
+      "sl_price": 3.3428,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 148.8095,
+      "shares": 146.5846,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
-      "score": 66.9,
+      "score": 67.0,
       "prob_band": "Medium",
       "emp_win_rate": null,
       "emp_samples": 3,
@@ -81,9 +81,9 @@
       "macd_hist": 0.1517,
       "ema_fast": 1.96,
       "ema_slow": 1.53,
-      "vol_ratio": 1.59,
-      "atr_pct": 15.55,
-      "asof": "2026-11-19 16:31 EST"
+      "vol_ratio": 1.6,
+      "atr_pct": 15.32,
+      "asof": "2026-11-19 17:31 EST"
     },
     {
       "ticker": "KRSA",
@@ -108,7 +108,7 @@
       "ema_slow": 31.26,
       "vol_ratio": 1.55,
       "atr_pct": 6.79,
-      "asof": "2026-11-19 16:31 EST"
+      "asof": "2026-11-19 17:31 EST"
     },
     {
       "ticker": "CTKB",
@@ -133,7 +133,7 @@
       "ema_slow": 5.55,
       "vol_ratio": 1.59,
       "atr_pct": 5.32,
-      "asof": "2026-11-19 16:31 EST"
+      "asof": "2026-11-19 17:31 EST"
     }
   ]
 }
