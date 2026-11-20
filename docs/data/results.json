@@ -1,13 +1,39 @@
 {
-  "generated": "2026-11-20T21:11:31",
+  "generated": "2026-11-20T22:12:05",
   "market_state": "POST",
   "scanned": 6917,
-  "candidates": 0,
+  "candidates": 1,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
     "sl_pct": 0.02,
     "rr_ratio": 2.5
   },
-  "results": []
+  "results": [
+    {
+      "ticker": "TGLS",
+      "market_state": "POST",
+      "entry": 48.0,
+      "tp_price": 50.4,
+      "sl_price": 47.04,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 10.4167,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 55.0,
+      "prob_band": "Medium",
+      "emp_win_rate": null,
+      "emp_samples": 3,
+      "rsi": 65.8,
+      "macd_hist": 0.1693,
+      "ema_fast": 43.92,
+      "ema_slow": 41.46,
+      "vol_ratio": 1.65,
+      "atr_pct": 4.02,
+      "asof": "2026-11-20 17:03 EST"
+    }
+  ]
 }
