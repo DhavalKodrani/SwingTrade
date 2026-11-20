@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-20T01:27:46",
+  "generated": "2026-11-20T03:55:38",
   "market_state": "CLOSED",
   "scanned": 6922,
-  "candidates": 8,
+  "candidates": 6,
   "risk": {
     "position_size": 500,
     "tp_pct": 0.05,
@@ -11,41 +11,16 @@
   },
   "results": [
     {
-      "ticker": "WWW",
-      "market_state": "CLOSED",
-      "entry": 24.94,
-      "tp_price": 26.187,
-      "sl_price": 24.4412,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 20.0481,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 82.8,
-      "prob_band": "High (aim 75-80%)",
-      "emp_win_rate": null,
-      "emp_samples": 1,
-      "rsi": 71.8,
-      "macd_hist": 0.402,
-      "ema_fast": 22.5,
-      "ema_slow": 21.0,
-      "vol_ratio": 2.99,
-      "atr_pct": 4.59,
-      "asof": "2026-11-19 20:21 EST"
-    },
-    {
       "ticker": "ZYN",
       "market_state": "CLOSED",
-      "entry": 10.35,
-      "tp_price": 10.8675,
-      "sl_price": 10.143,
+      "entry": 10.0571,
+      "tp_price": 10.56,
+      "sl_price": 9.856,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 48.3092,
+      "shares": 49.7161,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 77.1,
@@ -57,8 +32,33 @@
       "ema_fast": 9.26,
       "ema_slow": 8.68,
       "vol_ratio": 5.24,
-      "atr_pct": 8.24,
-      "asof": "2026-11-19 20:21 EST"
+      "atr_pct": 8.48,
+      "asof": "2026-11-19 22:49 EST"
+    },
+    {
+      "ticker": "GME",
+      "market_state": "CLOSED",
+      "entry": 27.0822,
+      "tp_price": 28.4363,
+      "sl_price": 26.5406,
+      "tp_pct": 0.05,
+      "sl_pct": 0.02,
+      "rr_ratio": 2.5,
+      "position_size": 500.0,
+      "shares": 18.4623,
+      "risk_amt": 10.0,
+      "reward_amt": 25.0,
+      "score": 75.1,
+      "prob_band": "Medium-High",
+      "emp_win_rate": null,
+      "emp_samples": 6,
+      "rsi": 64.3,
+      "macd_hist": 0.1385,
+      "ema_fast": 25.43,
+      "ema_slow": 24.45,
+      "vol_ratio": 2.66,
+      "atr_pct": 3.78,
+      "asof": "2026-11-19 22:49 EST"
     },
     {
       "ticker": "OBIO",
@@ -83,7 +83,7 @@
       "ema_slow": 5.87,
       "vol_ratio": 2.08,
       "atr_pct": 7.15,
-      "asof": "2026-11-19 20:21 EST"
+      "asof": "2026-11-19 22:49 EST"
     },
     {
       "ticker": "FIRY",
@@ -108,57 +108,7 @@
       "ema_slow": 11.56,
       "vol_ratio": 2.11,
       "atr_pct": 8.24,
-      "asof": "2026-11-19 20:21 EST"
-    },
-    {
-      "ticker": "TGT",
-      "market_state": "CLOSED",
-      "entry": 167.46,
-      "tp_price": 175.833,
-      "sl_price": 164.1108,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 2.9858,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 67.0,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 0,
-      "rsi": 61.4,
-      "macd_hist": 0.6778,
-      "ema_fast": 158.58,
-      "ema_slow": 155.53,
-      "vol_ratio": 2.79,
-      "atr_pct": 3.26,
-      "asof": "2026-11-19 20:21 EST"
-    },
-    {
-      "ticker": "CAKE",
-      "market_state": "CLOSED",
-      "entry": 111.5,
-      "tp_price": 117.075,
-      "sl_price": 109.27,
-      "tp_pct": 0.05,
-      "sl_pct": 0.02,
-      "rr_ratio": 2.5,
-      "position_size": 500.0,
-      "shares": 4.4843,
-      "risk_amt": 10.0,
-      "reward_amt": 25.0,
-      "score": 56.1,
-      "prob_band": "Medium",
-      "emp_win_rate": null,
-      "emp_samples": 4,
-      "rsi": 63.0,
-      "macd_hist": 0.4773,
-      "ema_fast": 110.91,
-      "ema_slow": 108.26,
-      "vol_ratio": 1.58,
-      "atr_pct": 4.49,
-      "asof": "2026-11-19 20:21 EST"
+      "asof": "2026-11-19 22:49 EST"
     },
     {
       "ticker": "WMG",
@@ -183,7 +133,7 @@
       "ema_slow": 30.2,
       "vol_ratio": 2.39,
       "atr_pct": 2.6,
-      "asof": "2026-11-19 20:21 EST"
+      "asof": "2026-11-19 22:49 EST"
     },
     {
       "ticker": "LCLN",
@@ -208,7 +158,7 @@
       "ema_slow": 25.29,
       "vol_ratio": 1.77,
       "atr_pct": 4.53,
-      "asof": "2026-11-19 20:21 EST"
+      "asof": "2026-11-19 22:49 EST"
     }
   ]
 }
