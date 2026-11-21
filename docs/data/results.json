@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-21T00:59:11",
-  "market_state": "POST",
-  "scanned": 6917,
+  "generated": "2026-11-21T03:45:30",
+  "market_state": "CLOSED",
+  "scanned": 6916,
   "candidates": 1,
   "risk": {
     "position_size": 500,
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "TGLS",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 48.0,
       "tp_price": 50.4,
       "sl_price": 47.04,
@@ -33,7 +33,7 @@
       "ema_slow": 41.46,
       "vol_ratio": 1.65,
       "atr_pct": 4.02,
-      "asof": "2026-11-20 19:52 EST"
+      "asof": "2026-11-20 22:40 EST"
     }
   ]
 }
