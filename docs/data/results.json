@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20T22:12:05",
+  "generated": "2026-11-21T00:59:11",
   "market_state": "POST",
   "scanned": 6917,
   "candidates": 1,
@@ -33,7 +33,7 @@
       "ema_slow": 41.46,
       "vol_ratio": 1.65,
       "atr_pct": 4.02,
-      "asof": "2026-11-20 17:03 EST"
+      "asof": "2026-11-20 19:52 EST"
     }
   ]
 }
