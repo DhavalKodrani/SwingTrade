@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-24T04:27:46",
+  "generated": "2026-11-24T06:46:17",
   "market_state": "CLOSED",
-  "scanned": 6911,
+  "scanned": 6914,
   "candidates": 4,
   "risk": {
     "position_size": 500,
@@ -33,7 +33,7 @@
       "ema_slow": 11.43,
       "vol_ratio": 1.65,
       "atr_pct": 4.68,
-      "asof": "2026-11-23 23:20 EST"
+      "asof": "2026-11-24 01:38 EST"
     },
     {
       "ticker": "BSP",
@@ -58,7 +58,7 @@
       "ema_slow": 42.02,
       "vol_ratio": 3.06,
       "atr_pct": 7.75,
-      "asof": "2026-11-23 23:20 EST"
+      "asof": "2026-11-24 01:38 EST"
     },
     {
       "ticker": "CBLL",
@@ -83,7 +83,7 @@
       "ema_slow": 25.8,
       "vol_ratio": 1.84,
       "atr_pct": 4.88,
-      "asof": "2026-11-23 23:20 EST"
+      "asof": "2026-11-24 01:38 EST"
     },
     {
       "ticker": "ALH",
@@ -108,7 +108,7 @@
       "ema_slow": 22.9,
       "vol_ratio": 2.23,
       "atr_pct": 3.47,
-      "asof": "2026-11-23 23:20 EST"
+      "asof": "2026-11-24 01:38 EST"
     }
   ]
 }
