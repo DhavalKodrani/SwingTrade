@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T23:07:05",
+  "generated": "2026-11-24T23:49:36",
   "market_state": "POST",
   "scanned": 6912,
   "candidates": 7,
@@ -33,19 +33,19 @@
       "ema_slow": 2.74,
       "vol_ratio": 1.75,
       "atr_pct": 5.44,
-      "asof": "2026-11-24 18:00 EST"
+      "asof": "2026-11-24 18:41 EST"
     },
     {
       "ticker": "DLTR",
       "market_state": "POST",
-      "entry": 154.0,
-      "tp_price": 161.7,
-      "sl_price": 150.92,
+      "entry": 155.79,
+      "tp_price": 163.5795,
+      "sl_price": 152.6742,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 3.2468,
+      "shares": 3.2094,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 68.0,
@@ -57,8 +57,8 @@
       "ema_fast": 138.13,
       "ema_slow": 131.26,
       "vol_ratio": 2.51,
-      "atr_pct": 3.91,
-      "asof": "2026-11-24 18:00 EST"
+      "atr_pct": 3.87,
+      "asof": "2026-11-24 18:41 EST"
     },
     {
       "ticker": "GRDN",
@@ -83,7 +83,7 @@
       "ema_slow": 43.85,
       "vol_ratio": 2.43,
       "atr_pct": 4.05,
-      "asof": "2026-11-24 18:00 EST"
+      "asof": "2026-11-24 18:41 EST"
     },
     {
       "ticker": "MAGN",
@@ -108,7 +108,7 @@
       "ema_slow": 12.23,
       "vol_ratio": 2.17,
       "atr_pct": 4.66,
-      "asof": "2026-11-24 18:00 EST"
+      "asof": "2026-11-24 18:41 EST"
     },
     {
       "ticker": "KMDA",
@@ -133,7 +133,7 @@
       "ema_slow": 7.78,
       "vol_ratio": 1.95,
       "atr_pct": 3.5,
-      "asof": "2026-11-24 18:00 EST"
+      "asof": "2026-11-24 18:41 EST"
     },
     {
       "ticker": "ACOG",
@@ -158,19 +158,19 @@
       "ema_slow": 8.66,
       "vol_ratio": 2.0,
       "atr_pct": 5.93,
-      "asof": "2026-11-24 18:00 EST"
+      "asof": "2026-11-24 18:41 EST"
     },
     {
       "ticker": "TGTX",
       "market_state": "POST",
-      "entry": 70.8,
-      "tp_price": 74.34,
-      "sl_price": 69.384,
+      "entry": 70.9244,
+      "tp_price": 74.4706,
+      "sl_price": 69.5059,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 7.0621,
+      "shares": 7.0498,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 58.7,
@@ -183,7 +183,7 @@
       "ema_slow": 59.13,
       "vol_ratio": 1.63,
       "atr_pct": 4.67,
-      "asof": "2026-11-24 18:00 EST"
+      "asof": "2026-11-24 18:41 EST"
     }
   ]
 }
