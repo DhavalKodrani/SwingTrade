@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-24T23:49:36",
-  "market_state": "POST",
-  "scanned": 6912,
+  "generated": "2026-11-25T03:11:53",
+  "market_state": "CLOSED",
+  "scanned": 6911,
   "candidates": 7,
   "risk": {
     "position_size": 500,
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "PLX",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 3.16,
       "tp_price": 3.318,
       "sl_price": 3.0968,
@@ -33,19 +33,19 @@
       "ema_slow": 2.74,
       "vol_ratio": 1.75,
       "atr_pct": 5.44,
-      "asof": "2026-11-24 18:41 EST"
+      "asof": "2026-11-24 22:05 EST"
     },
     {
       "ticker": "DLTR",
-      "market_state": "POST",
-      "entry": 155.79,
-      "tp_price": 163.5795,
-      "sl_price": 152.6742,
+      "market_state": "CLOSED",
+      "entry": 154.845,
+      "tp_price": 162.5873,
+      "sl_price": 151.7481,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 3.2094,
+      "shares": 3.229,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 68.0,
@@ -57,12 +57,12 @@
       "ema_fast": 138.13,
       "ema_slow": 131.26,
       "vol_ratio": 2.51,
-      "atr_pct": 3.87,
-      "asof": "2026-11-24 18:41 EST"
+      "atr_pct": 3.9,
+      "asof": "2026-11-24 22:05 EST"
     },
     {
       "ticker": "GRDN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 50.62,
       "tp_price": 53.151,
       "sl_price": 49.6076,
@@ -83,11 +83,11 @@
       "ema_slow": 43.85,
       "vol_ratio": 2.43,
       "atr_pct": 4.05,
-      "asof": "2026-11-24 18:41 EST"
+      "asof": "2026-11-24 22:05 EST"
     },
     {
       "ticker": "MAGN",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 13.74,
       "tp_price": 14.427,
       "sl_price": 13.4652,
@@ -108,11 +108,11 @@
       "ema_slow": 12.23,
       "vol_ratio": 2.17,
       "atr_pct": 4.66,
-      "asof": "2026-11-24 18:41 EST"
+      "asof": "2026-11-24 22:05 EST"
     },
     {
       "ticker": "KMDA",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 8.35,
       "tp_price": 8.7675,
       "sl_price": 8.183,
@@ -133,11 +133,11 @@
       "ema_slow": 7.78,
       "vol_ratio": 1.95,
       "atr_pct": 3.5,
-      "asof": "2026-11-24 18:41 EST"
+      "asof": "2026-11-24 22:05 EST"
     },
     {
       "ticker": "ACOG",
-      "market_state": "POST",
+      "market_state": "CLOSED",
       "entry": 9.44,
       "tp_price": 9.912,
       "sl_price": 9.2512,
@@ -158,19 +158,19 @@
       "ema_slow": 8.66,
       "vol_ratio": 2.0,
       "atr_pct": 5.93,
-      "asof": "2026-11-24 18:41 EST"
+      "asof": "2026-11-24 22:05 EST"
     },
     {
       "ticker": "TGTX",
-      "market_state": "POST",
-      "entry": 70.9244,
-      "tp_price": 74.4706,
-      "sl_price": 69.5059,
+      "market_state": "CLOSED",
+      "entry": 70.0,
+      "tp_price": 73.5,
+      "sl_price": 68.6,
       "tp_pct": 0.05,
       "sl_pct": 0.02,
       "rr_ratio": 2.5,
       "position_size": 500.0,
-      "shares": 7.0498,
+      "shares": 7.1429,
       "risk_amt": 10.0,
       "reward_amt": 25.0,
       "score": 58.7,
@@ -182,8 +182,8 @@
       "ema_fast": 62.71,
       "ema_slow": 59.13,
       "vol_ratio": 1.63,
-      "atr_pct": 4.67,
-      "asof": "2026-11-24 18:41 EST"
+      "atr_pct": 4.73,
+      "asof": "2026-11-24 22:05 EST"
     }
   ]
 }
