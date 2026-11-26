@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-26T04:44:14",
-  "market_state": "CLOSED",
+  "generated": "2026-11-26T22:25:18",
+  "market_state": "POST",
   "scanned": 6911,
   "candidates": 9,
   "risk": {
@@ -12,7 +12,7 @@
   "results": [
     {
       "ticker": "CARL",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 18.78,
       "tp_price": 19.719,
       "sl_price": 18.4044,
@@ -33,11 +33,11 @@
       "ema_slow": 15.75,
       "vol_ratio": 1.78,
       "atr_pct": 6.75,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "GRDN",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 55.35,
       "tp_price": 58.1175,
       "sl_price": 54.243,
@@ -58,11 +58,11 @@
       "ema_slow": 44.17,
       "vol_ratio": 2.08,
       "atr_pct": 3.9,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "ANF",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 176.558,
       "tp_price": 185.3859,
       "sl_price": 173.0268,
@@ -83,11 +83,11 @@
       "ema_slow": 147.66,
       "vol_ratio": 1.71,
       "atr_pct": 5.47,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "ATAT",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 39.85,
       "tp_price": 41.8425,
       "sl_price": 39.053,
@@ -108,11 +108,11 @@
       "ema_slow": 34.81,
       "vol_ratio": 1.89,
       "atr_pct": 3.27,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "NPK",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 161.0,
       "tp_price": 169.05,
       "sl_price": 157.78,
@@ -133,11 +133,11 @@
       "ema_slow": 146.07,
       "vol_ratio": 2.08,
       "atr_pct": 3.31,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "AWI",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 184.83,
       "tp_price": 194.0715,
       "sl_price": 181.1334,
@@ -158,11 +158,11 @@
       "ema_slow": 169.8,
       "vol_ratio": 2.44,
       "atr_pct": 3.1,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "OCTV",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 22.55,
       "tp_price": 23.6775,
       "sl_price": 22.099,
@@ -183,11 +183,11 @@
       "ema_slow": 20.63,
       "vol_ratio": 1.78,
       "atr_pct": 4.19,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "STN",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 86.5916,
       "tp_price": 90.9212,
       "sl_price": 84.8598,
@@ -208,11 +208,11 @@
       "ema_slow": 75.88,
       "vol_ratio": 1.96,
       "atr_pct": 2.9,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     },
     {
       "ticker": "AMTM",
-      "market_state": "CLOSED",
+      "market_state": "POST",
       "entry": 24.86,
       "tp_price": 26.103,
       "sl_price": 24.3628,
@@ -233,7 +233,7 @@
       "ema_slow": 21.23,
       "vol_ratio": 2.26,
       "atr_pct": 4.64,
-      "asof": "2026-11-25 23:38 EST"
+      "asof": "2026-11-26 17:20 EST"
     }
   ]
 }
