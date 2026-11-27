@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T02:24:26",
+  "generated": "2026-11-27T04:46:38",
   "market_state": "CLOSED",
-  "scanned": 6911,
+  "scanned": 6910,
   "candidates": 9,
   "risk": {
     "position_size": 500,
@@ -33,7 +33,7 @@
       "ema_slow": 15.75,
       "vol_ratio": 1.78,
       "atr_pct": 6.75,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "GRDN",
@@ -58,7 +58,7 @@
       "ema_slow": 44.17,
       "vol_ratio": 2.08,
       "atr_pct": 3.9,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "ANF",
@@ -83,7 +83,7 @@
       "ema_slow": 147.66,
       "vol_ratio": 1.71,
       "atr_pct": 5.47,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "ATAT",
@@ -108,7 +108,7 @@
       "ema_slow": 34.81,
       "vol_ratio": 1.89,
       "atr_pct": 3.27,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "NPK",
@@ -133,7 +133,7 @@
       "ema_slow": 146.07,
       "vol_ratio": 2.08,
       "atr_pct": 3.31,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "AWI",
@@ -158,7 +158,7 @@
       "ema_slow": 169.8,
       "vol_ratio": 2.44,
       "atr_pct": 3.1,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "OCTV",
@@ -183,7 +183,7 @@
       "ema_slow": 20.63,
       "vol_ratio": 1.78,
       "atr_pct": 4.19,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "STN",
@@ -208,7 +208,7 @@
       "ema_slow": 75.88,
       "vol_ratio": 1.96,
       "atr_pct": 2.9,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     },
     {
       "ticker": "AMTM",
@@ -233,7 +233,7 @@
       "ema_slow": 21.23,
       "vol_ratio": 2.26,
       "atr_pct": 4.64,
-      "asof": "2026-11-26 21:17 EST"
+      "asof": "2026-11-26 23:41 EST"
     }
   ]
 }
